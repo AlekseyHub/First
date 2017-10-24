@@ -1,0 +1,921 @@
+.account-details-delivery-table {
+    overflow:hidden;
+    font-size:14px;
+}
+.account-details-delivery-table-top {
+    overflow:hidden;
+    border-bottom:1px solid #e1e0e0;
+}
+.account-details-delivery-table-top div {
+    font-size:14px;
+    line-height:35px;
+    height:35px;
+}
+.account-details-delivery-table-row {
+    overflow:hidden;
+    border-bottom:1px solid #e1e0e0;
+}
+.account-details-delivery-table-row:last-child {
+    border-bottom:0;
+}
+.account-details-delivery-table-row div {
+
+}
+
+.account-details-delivery-table-row-num {
+    padding-left:15px;
+    float:left;
+    width:45px;
+    line-height:53px;
+    height:53px;
+}
+.account-details-delivery-table-row-address {
+    float:left;
+    width:395px;
+    line-height:53px;
+    height:53px;
+}
+.account-details-delivery-table-row-address span {color:#9d9d9d;}
+.account-details-delivery-table-row-person {
+    float:left;
+    width:300px;
+    line-height:53px;
+    height:53px;
+}
+.account-details-delivery-table-row-phone {
+    float:left;
+    width:170px;
+    line-height:53px;
+    height:53px;
+}
+.account-details-delivery-table-row-person span,
+.account-details-delivery-table-row-phone span {
+    padding-left: 13px;
+}
+.account-details-delivery-table-row-controls {
+    float:right;
+    width:55px;
+    padding-right:20px;
+    line-height:53px;
+    height:53px;
+}
+.account-details-delivery-table-top .account-details-delivery-table-row-person {
+    padding-left:13px;
+    width:307px;
+}
+.account-details-delivery-table-top .account-details-delivery-table-row-phone {
+    padding-left:13px;
+    width:142px;
+}
+
+.account-details-delivery-table-row-person input {
+    width:235px;
+}
+.account-details-delivery-table-row-phone input {
+    width:130px;
+}
+
+.account-details-delivery-table-row-controls a {
+    float:right;
+    display:block;
+    width:15px;
+    height:15px;
+    margin-left:10px;
+    margin-top:19px;
+}
+.account-details-delivery-table-row-controls a.edit-ico {
+    /*background:url("../images/account/view.png") no-repeat;*/
+    background:url("../images/account/ico_edit.png") no-repeat;
+}
+a.delete-ico {
+    background:url("../images/account/delete.png") no-repeat;
+}
+a.delete-ico:hover {
+    background-position:bottom left;
+}
+.account-details-delivery-table-row-controls a.edit-ico:hover,
+.active .account-details-delivery-table-row-controls a.edit-ico {
+    background-position:bottom left;
+}
+.account-details-delivery-table-row .account-details-delivery-table-row-collapse {
+    margin-left:60px;
+    margin-right:15px;
+    padding-top:13px;
+    clear:both;
+    height:185px;
+    display:none;
+}
+.account-details-delivery-table-row.active .account-details-delivery-table-row-collapse {
+    display:block;
+    width:850px;
+}
+
+.account-details-delivery-table-row-collapse textarea {
+    padding:13px;
+    height:85px;
+    border-radius:7px;
+    border:1px solid #a9a9a9;
+    font-size:14px;
+    width:822px;
+    resize:none;
+    overflow: auto;
+    margin:0;
+}
+
+.account-details-delivery-table-row-collapse-region-edit-controls,
+.account-details-delivery-table-row-collapse-controls {
+    overflow:hidden;
+    padding:0;
+    margin-top:18px;
+}
+.account-details-delivery-table-row-collapse-region-edit-controls {
+    margin-bottom: 36px;
+}
+.account-details-delivery-table-row-collapse-region-edit-controls a,
+.account-details-delivery-table-row-collapse-controls a {
+    float:right;
+    margin-left:27px;
+
+}
+/**
+*** Р›РёС‡РЅС‹Р№ РєР°Р±РёРЅРµС‚ / РђРґСЂРµСЃР° РґРѕСЃС‚Р°РІРєРё / Р¤РѕСЂРјР° РґРѕР±Р°РІР»РµРЅРёСЏ Р°РґСЂРµСЃР°
+**/
+
+.account-details-delivery-controls {
+    margin:20px 0 20px 18px;
+    width:180px;
+    color:#1abc9c;
+    font-size:14px;
+}
+.account-details-delivery-controls a {
+    color:#1abc9c;
+
+}
+.account-details-delivery-controls.not-active {
+    display:none;
+}
+
+.account-details-delivery-controls.not-active-btn {
+    opacity:0.3;
+}
+.account-details-delivery-controls.not-active-btn a.wgreen-btn:hover {
+    border: 2px solid #1abc9c;
+    color: #1abc9c;
+    background:#ffffff;
+}
+.choose-city-place {
+    display:none;
+    margin:0 17px 15px 0px;
+}
+.choose-city-place.opened {
+    margin-bottom: 0;
+}
+.city-way-account-details-delivery-new-address-wrapper,
+.region-way-account-details-delivery-new-address-wrapper,
+.account-details-delivery-new-address-wrapper {
+    margin:0 17px 36px 15px;
+    display:none;
+}
+#account-details-delivery .city-way-account-details-delivery-new-address-wrapper,
+#account-details-delivery .region-way-account-details-delivery-new-address-wrapper,
+#account-details-delivery .account-details-delivery-new-address-wrapper {
+    margin-bottom: 0;
+}
+#account-details-delivery .account-details-delivery-new-address {
+    margin-bottom: 36px;
+}
+.city-way-account-details-delivery-new-address-wrapper.active,
+.region-way-account-details-delivery-new-address-wrapper.active,
+.account-details-delivery-new-address-wrapper.active {
+    display:block;
+}
+.account-details-delivery-new-address-title {
+    font-size:18px;
+    line-height:18px;
+    margin-bottom:17px;
+}
+.account-details-delivery-new-address-field {
+    float: left;
+    /* width: 25%; */
+    margin-top: 34px;
+    height: 40px;
+    margin-left: 0px;
+}
+.account-details-delivery-new-address-field select,
+.account-details-delivery-new-address-field input {
+    /*width:245px;*/
+    width: 79%;
+}
+.width-257 {
+    width:270px;
+}
+
+.account-details-delivery-new-address-city {
+    float:left;
+    width:270px;
+    height:auto;
+    margin-left:0;
+}
+
+.account-details-delivery-new-address-street {
+    /*clear: both;*/
+}
+
+.account-details-delivery-new-address-person {
+    clear:both;
+    margin-left:0;
+}
+.account-details-delivery-new-address-comment {
+    clear:both;
+    margin-bottom:17px;
+    margin-top:17px;
+}
+#new_step2 .account-details-delivery-new-address-comment {
+    clear:both;
+    margin-bottom:0px;
+    margin-top:0px;
+}
+
+.account-details-delivery-new-address-comment-title {
+    font-weight: 600;
+    margin: 18px 0 9px;
+    padding-top: 9px;
+    color: #555555;
+}
+.account-details-delivery-new-address-comment textarea {
+    border:1px solid #a3a3a3;
+    border-radius:7px;
+    padding:13px;
+    height:85px;
+    width: 682px;
+    resize:none;
+    margin:2px;
+    font-size:14px;
+    overflow: auto;
+}
+.account-details-delivery-new-address-comment textarea:focus {
+    border:3px solid #77fce2;
+    margin:0;
+    outline: none;
+}
+.account-details-delivery-new-address .infobox-wrapper {
+    padding-top:18px;
+    clear:both;
+}
+.account-details-delivery-new-address-controls {
+    overflow:hidden;
+    clear:both;
+}
+.account-details-delivery-new-address-controls a {
+    float: left;
+    margin-right: 27px;
+    font-size: 14px;
+}
+
+/**
+*** Р“СЂСѓРїРїРѕРІС‹Рµ РѕРїРµСЂР°С†РёРё СЃ РґРѕСЃС‚Р°РІРєРѕР№
+**/
+
+#popup-orders-group-delivery input:disabled {
+    border: 1px solid #ffffff;
+    width: 100%;
+}
+
+#popup-orders-group-delivery {
+    width: 910px;
+    overflow: visible;
+}
+.popup-order-delivery-information,
+.popups-orders-group-information {
+    background: url("../images/info.png") 0 8px no-repeat;
+    clear: both;
+    font-size: 14px;
+    margin-left: 0;
+    margin-top: 0;
+    padding-left: 35px;
+    line-height:28px;
+}
+#popup-order_delivery-window .popup-basic-content,
+#popup-orders-group-delivery .popup-basic-content {
+    padding: 27px 40px;
+}
+#popup-order_delivery-window .account-details-delivery-table-row-num,
+#popup-orders-group-delivery .account-details-delivery-table-row-num {
+    padding-left:35px;
+    width:30px;
+}
+#popup-order_delivery-window .account-details-delivery-controls,
+#popup-orders-group-delivery .account-details-delivery-controls {
+    padding-left:35px;
+    margin: 0 0 20px;
+    color:#1abc9c;
+}
+#popup-order_delivery-window .account-details-delivery-controls a,
+#popup-orders-group-delivery .account-details-delivery-controls a {
+    color:#1abc9c;
+}
+.width-310 {
+    width: 305px;
+}
+.popups-order-delivery-controls,
+.popups-orders-group-delivery-controls {
+    overflow: hidden;
+    margin-top: 35px;
+}
+.popups-order-delivery-controls a.save-btn,
+.popups-orders-group-delivery-controls a.save-btn {
+    width: 85px;
+    float: right;
+}
+
+#popups-orders-delivery .account-details-delivery-table {
+    margin-top:15px;
+}
+.account-details-delivery-table-row {
+    border-top:0;
+    /*border-bottom:0;*/
+}
+
+.blocker {
+    position:absolute;
+    background-color: white;
+    opacity:0.8;
+    z-index:10;
+}
+
+#popups-orders-delivery .account-details-delivery-table-row-address {width:330px;}
+#popups-orders-delivery .account-details-delivery-table-row-address input {width:290px;}
+#popups-orders-delivery .account-details-delivery-table-row-person {width:220px;}
+#popups-orders-delivery .account-details-delivery-table-row-person input {width:170px;}
+#popups-orders-delivery .account-details-delivery-table-row-controls {width:30px;padding-right:0;padding-left:0;}
+#popups-orders-delivery .account-details-delivery-table-row-phone {width:165px;}
+#popups-orders-delivery .account-details-delivery-table-row-phone input {width:130px;}
+#popups-orders-delivery .account-details-delivery-table-row-collapse textarea {width:680px;}
+#popups-orders-delivery .account-details-delivery-table-row-collapse-controls {padding-right:25px;}
+#popups-orders-delivery .account-details-delivery-table-row-controls a.edit-ico {background:url("../images/account/ico_edit.png") no-repeat scroll left top;}
+#popups-orders-delivery .active .account-details-delivery-table-row-controls a.edit-ico,
+#popups-orders-delivery .account-details-delivery-table-row-controls a.edit-ico:hover {background:url("../images/account/ico_edit.png") no-repeat scroll left bottom;}
+
+#popups-orders-delivery-content {
+    max-height: 310px;
+}
+
+.popups-order-delivery-comment,
+.popups-orders-group-delivery-comment {margin-top:36px;}
+.popups-orders-group-delivery-comment-title {
+    font-weight:600;
+    margin-bottom:9px;
+}
+.popups-order-delivery-comment textarea,
+.popups-orders-group-delivery-comment textarea{
+    background: #ffffff;
+    border: 1px solid #a9a9a9;
+    border-radius: 7px;
+    color: #555555;
+    font-family: "Open Sans",sans-serif;
+    font-size: 14px;
+    margin: 2px;
+    overflow: auto;
+    padding: 15px;
+    resize: none;
+    width:780px;
+}
+.popups-orders-group-delivery-comment textarea:focus {
+    border:3px solid #77fce2;
+    margin:0;
+    outline: none;
+}
+.width-265 {
+    width:270px;
+}
+#popups-orders-delivery .account-details-delivery-new-address {margin: 0 0 20px;}
+#popups-orders-delivery .account-details-delivery-new-address-comment textarea {width:780px;}
+#popups-orders-delivery .account-details-delivery-table-row.active .account-details-delivery-table-row-collapse {
+    width: 740px;
+}
+#popups-orders-delivery .account-details-delivery-new-address-field {
+    width: 305px;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+#popups-orders-delivery .account-details-delivery-new-address-field input {
+    width:230px;
+}
+#popups-orders-delivery .account-details-delivery-new-address-city {
+    clear:both;
+
+}
+#popups-orders-delivery .account-details-delivery-new-address-street {
+    clear:both;
+}
+
+
+/* DELIVERY POPUPS */
+
+.order-delivery-row {
+    overflow: hidden;
+    margin-bottom:12px;
+    line-height: 42px;
+}
+.popup-basic-window .order-delivery-row input {
+    border-color:#ffffff;
+    text-decoration:underline;
+}
+.popup-basic-window .order-delivery-row input:focus {
+    text-decoration:none;
+}
+
+.order-delivery-row-num {
+    float: left;
+    width: 30px;
+}
+.order-delivery-row-address {
+    float: left;
+    width: 400px;
+}
+.order-delivery-row-person {
+    float: left;
+    width: 220px;
+    position:relative;
+}
+.order-delivery-row-phone {
+    float: left;
+    width: 155px;
+    position:relative;
+}
+.order-delivery-row-phone input {
+    width: 120px;
+}
+/*
+.order-delivery-row input:hover {
+	border:3px solid #77fce2;
+	margin:0;
+	outline: none;
+	text-decoration:none;
+}
+*/
+.order-delivery-row textarea {
+    display: none;
+}
+.popups-order-delivery-comment {
+    margin-top:36px;
+}
+.order-delivery-date {
+    overflow: hidden;
+    margin-top:36px;
+}
+.order-delivery-date-text {
+    width: 190px;
+    float: left;
+    line-height: 36px;
+}
+.order-delivery-date-field {
+    width: 300px;
+    float: left;
+}
+
+
+
+.account-details-delivery-table-row-add {
+    color:#19b294;
+}
+.account-details-delivery-table-row-add a {
+    color:#19b294;
+}
+
+
+/* Р›РёС‡РЅС‹Р№ РєР°Р±РёРЅРµС‚ / РђРґСЂРµСЃР° РґРѕСЃС‚Р°РІРєРё
+ * СЃРµР»РµРєС‚РѕСЂ Р’ РџР Р•Р”Р•Р›РђРҐ РљРђР” РёР»Рё Р—Рђ РџР Р•Р”Р•Р›РђРњР РљРђР” РЅР° СЃС‚СЂР°РЅРёС†Рµ */
+
+.choose-city-place {
+    overflow: hidden;
+}
+.choose-city-place-title {
+    font-weight: 600;
+    margin: 20px 0 20px;
+}
+.choose-city-place-in,
+.choose-city-place-out {
+    width: 190px;
+    float: left;
+    line-height:37px;
+}
+.choose-city-place-in span,
+.choose-city-place-out span {
+    padding-left: 10px;
+}
+.choose-city-place-cancel {
+    float: left;
+    margin-left: 20px;
+}
+
+
+/* Р¤РѕСЂРјР° РґРѕР±Р°РІР»РµРЅРёСЏ СЂРµРіРёРѕРЅР°Р»СЊРЅРѕРіРѕ Р°РґСЂРµСЃР° РґРѕСЃС‚Р°РІРєРё
+ * РџРѕ СѓРјРѕР»С‡Р°РЅРёСЋ Р±Р»РѕРє .add-address-region РґР»СЏ СЃС‚СЂР°РЅРёС†С‹ Р›РёС‡РЅС‹Р№ РєР°Р±РёРЅРµС‚ / РђРґСЂРµСЃР° РґРѕСЃС‚Р°РІРєРё
+ * Р•СЃР»Рё Сѓ Р±Р»РѕРєР° .add-address-region РїРѕСЃС‚Р°РІРёС‚СЊ РєР»Р°СЃСЃ .popup, С‚Рѕ Р±СѓРґСѓС‚ Р°РєС‚РёРІРЅС‹ СЃС‚РёР»Рё РґР»СЏ РїРѕРїР°РїРѕРІ
+ * todo
+ **/
+
+.width-155 {
+    width: 155px;
+}
+.add-address-region {
+    font-size: 14px;
+}
+.add-address-region .cell {
+    margin-top: 36px;
+}
+.add-address-region.edit-page .cell.city {
+    margin-top: 18px;
+}
+.add-address-region .left {
+    float: left;
+    width:475px;
+}
+.add-address-region .right {
+    width: 440px;
+    float: right;
+}
+.add-address-region.popup .left,
+.add-address-region.popup .right,
+.add-address-region.edit-page .left,
+.add-address-region.edit-page .right {
+    width: auto;
+    float: none;
+}
+.add-address-region .label {
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-left: 3px;
+}
+.add-address-region .city input:disabled,
+.account-details .add-address-region .city input:disabled {
+    background: #f1f1f1;
+    width: 449px; /* 475 - 20 - 6 */
+    border: 1px solid #f1f1f1;
+}
+.add-address-region.popup .city input:disabled {
+    width: 364px;
+}
+.add-address-region.edit-page .city input:disabled {
+    width: 334px;
+}
+.add-address-region.popup .city {
+    width: 390px;
+    float: left;
+}
+.add-address-region.edit-page .city {
+    width: 390px;
+}
+.add-address-region .postcode input {
+    width: 144px;
+}
+.add-address-region.edit-page .postcode input {
+    width: 194px;
+}
+.add-address-region.popup .postcode {
+    width: 160px;
+    float: right;
+}
+.add-address-region.edit-page .postcode {
+    width: 360px;
+    float: left;
+}
+.add-address-region.popup .postcode input {
+    width: 134px;
+}
+.add-address-region.edit-page .cell.street {
+    float:left;
+    width:610px;
+}
+.add-address-region .street-abbr {
+    width: 155px;
+    float: left;
+}
+.add-address-region .street-name {
+    width: 300px;
+    float: right;
+}
+.add-address-region.edit-page .street-abbr {
+    width: 210px;
+}
+.add-address-region.edit-page .street-name {
+    width: 400px;
+}
+.add-address-region .street-name input {
+    width: 274px;
+}
+
+.add-address-region.popup .street-name {
+    width:420px;
+}
+.add-address-region.popup .street-name input {
+    width: 394px;
+}
+.add-address-region.edit-page .street-name input {
+    width: 374px;
+}
+
+.add-address-region .housetype .cell {
+    float: left;
+    width: 78px;
+    margin-left: 12px;
+}
+.add-address-region.popup .housetype .cell {
+    width: 78px;
+    margin-left: 54px;
+}
+.add-address-region.edit-page .housetype .cell {
+    margin-left: 35px;
+}
+.add-address-region .housetype .cell:first-child {
+    margin-left: 0;
+}
+.add-address-region.popup .housetype .cell:last-child {
+    float:right;
+}
+
+.add-address-region .housetype input {
+    width: 52px;
+}
+.add-address-region.popup .worktime {
+    float: left;
+    margin-left: -18px;
+}
+.add-address-region .worktime input,
+.add-address-region .dinnertime input {
+    text-align:center;
+}
+.add-address-region.popup .worktime .label,
+.add-address-region.popup .dinnertime .label {
+    margin-left: 23px;
+}
+.add-address-region.popup .dinnertime {
+    float:right;
+
+}
+
+.add-address-region.edit-page .worktime {
+    float: left;
+    width: 250px;
+}
+.add-address-region.edit-page .dinnertime {
+    float: left;
+    width: 250px;
+    margin-left: 48px;
+}
+
+
+.add-address-region textarea {
+    border:1px solid #a3a3a3;
+    border-radius:7px;
+    padding:10px;
+    resize:none;
+    margin:2px;
+    font-size:14px;
+    overflow: auto;
+}
+.add-address-region textarea:focus {
+    border:3px solid #77fce2;
+    margin:0;
+    outline: none;
+}
+
+.add-address-region .extrainfo textarea {
+    width: 449px;
+}
+.add-address-region .instructions textarea {
+    width: 414px;
+}
+.add-address-region.popup .extrainfo textarea,
+.add-address-region.popup .instructions textarea {
+    width: 584px;
+}
+.add-address-region.edit-page .extrainfo textarea,
+.add-address-region.edit-page .instructions textarea {
+    width: 434px;
+}
+.add-address-region.edit-page .extrainfo {
+    float: left;
+    width: 460px;
+}
+.add-address-region.edit-page .instructions {
+    float: right;
+    width: 460px;
+}
+.add-address-region .cell.email {
+    float: right;
+    width: 210px;
+    margin-left: 20px;
+}
+.add-address-region .cell.phone {
+    float: right;
+    width: 210px;
+    margin-left: 0;
+}
+.add-address-region.popup .cell.email {
+    float: right;
+    width: 276px;
+    margin-left: 0;
+}
+.add-address-region.popup .cell.phone {
+    float: left;
+    width: 276px;
+    margin-left: 0;
+}
+.add-address-region.popup .cell.email input,
+.add-address-region.popup .cell.phone input{
+    width: 250px;
+}
+.add-address-region.edit-page .cell.person input,
+.add-address-region.edit-page .cell.email input,
+.add-address-region.edit-page .cell.phone input{
+    width: 240px;
+}
+.add-address-region.edit-page .cell.person,
+.add-address-region.edit-page .cell.email,
+.add-address-region.edit-page .cell.phone{
+    width: 266px;
+    float: left;
+    margin-left: 86px;
+}
+.add-address-region.edit-page .cell.person {
+    margin-left: 0;
+}
+.add-address-region .cell.person input {
+    width: 449px;
+}
+.add-address-region.popup .cell.person input {
+    width: 584px;
+}
+.add-address-region .controls {
+    margin-top: 36px;
+    overflow: hidden;
+}
+.add-address-region .controls a {
+    float: right;
+    margin-left: 20px;
+}
+
+.width-170 {
+    width: 170px;
+}
+
+
+
+
+.account-details-delivery-table-row.region-address.active .account-details-delivery-table-row-collapse {
+    height: auto;
+    width: 970px;
+    margin-left: 18px;
+    margin-right: 18px;
+    padding-top: 13px;
+}
+.account-details-delivery-table-row.region-address .account-details-delivery-table-row-collapse-content div {
+
+}
+.account-details-delivery-table-row.region-address .account-details-delivery-table-row-collapse-content {
+    margin-bottom: 36px;
+
+}
+.account-details-delivery-table-row.region-address .account-details-delivery-table-row-collapse-controls {
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+.popup-delivery-zhest.add-address-region {}
+
+
+.popup-delivery-zhest.add-address-region .city input:disabled, .account-details .add-address-region .city input:disabled {width:270px;}
+
+.popup-delivery-zhest.add-address-region .cell.postcode { float:left;width:260px;clear:both;}
+.popup-delivery-zhest.add-address-region .cell.street { float: left;clear:none;}
+.popup-delivery-zhest.add-address-region .cell-group.housetype {float:left; width:100%;}
+.popup-delivery-zhest.add-address-region .housetype .cell {margin-left:87px;}
+.popup-delivery-zhest.add-address-region .housetype .cell:first-child {margin-left:0;}
+.popup-delivery-zhest.add-address-region .cell.worktime {width:315px;}
+.popup-delivery-zhest.add-address-region .cell.dinnertime {width:315px;}
+.popup-delivery-zhest.add-address-region .cell.extrainfo {width:350px;}
+.popup-delivery-zhest.add-address-region .cell.extrainfo textarea {width:310px;}
+.popup-delivery-zhest.add-address-region .cell.instructions {width:350px;}
+.popup-delivery-zhest.add-address-region .cell.instructions textarea {width:310px;}
+.popup-delivery-zhest.add-address-region .cell.person {width:230px;float:left;}
+.popup-delivery-zhest.add-address-region .cell.person input {width:194px;}
+.popup-delivery-zhest.add-address-region .cell.email {width:230px;}
+.popup-delivery-zhest.add-address-region .cell.email input {width:194px;}
+.popup-delivery-zhest.add-address-region .cell.phone {width:230px;}
+.popup-delivery-zhest.add-address-region .cell.phone input {width:194px;}
+
+
+
+.popup-delivery-zhest .account-details-delivery-new-address-street {
+    clear:both;
+    margin-left:0;
+}
+.popup-delivery-zhest .account-details-delivery-new-address-comment-title {font-size:14px;}
+.popup-delivery-zhest .account-details-delivery-new-address-comment textarea {
+    width:680px;
+}
+
+.styledelivery{
+    clear: both;
+    padding-top: 0px;
+}
+
+.delivery-type-block-content .styledelivery {
+
+    padding-top : 20px;
+}
+
+
+
+
+/* DELIVERY POPUP 24/05/2016 */
+
+#popup-edit_delivery .step2-item {
+    padding: 0;
+    border: 0;
+    color:#555555;
+}
+#popup-edit_delivery .step2-item-delivery {
+    margin-top: 0;
+}
+#popup-edit_delivery .step2-item-delivery .city-title {
+    padding-left: 0;
+}
+#popup-edit_delivery .step2-item-delivery .list li .text {
+    width: 749px;
+}
+#popup-edit_delivery .delivery-step-controls {
+    /*margin-top: 36px;*/
+    margin-top: 0;
+}
+#popup-edit_delivery .step2-item-delivery .list li .in-kad-list li.last,
+#popup-edit_delivery .step2-item-delivery .list li .out-kad-list li.last {
+    margin-top: 0;
+}
+#popup-edit_delivery .gvn-add-region-address-form .place {
+    width: 717px;
+}
+#popup-edit_delivery .gvn-add-region-address-form .person,
+#popup-edit_delivery .gvn-add-region-address-form .phone,
+#popup-edit_delivery .gvn-add-region-address-form .email {
+    float: left;
+    margin-top: 60px;
+    padding-left: 44px;
+    width: 210px;
+}
+
+#popup-edit_delivery .gvn-add-region-address-form .person input,
+#popup-edit_delivery .gvn-add-region-address-form .phone input,
+#popup-edit_delivery .gvn-add-region-address-form .email input {
+    width: 174px;
+}
+#popup-edit_delivery .gvn-add-region-address-form .person {
+    padding-left:0;
+}
+.gvn-add-region-address-form .label {
+    color: #555555;
+}
+#popup-edit_delivery .city-way-account-details-delivery-new-address-wrapper,
+#popup-edit_delivery .region-way-account-details-delivery-new-address-wrapper,
+#popup-edit_delivery .account-details-delivery-new-address-wrapper {
+    margin: 0 0px 36px 0px;
+}
+
+
+
+
+/* END DELIVERY POPUP */
+
+
+
+.last .account-details-delivery-controls {
+    margin:10px 0 0 0;
+}
+
+.cost-of-delivery-will-be-updated {
+    background: url("../images/info.bad.png") no-repeat;
+    padding-left: 35px;
+    margin: 36px 0;
+}
+.change-prices-dates-table-wrapper .cost-of-delivery-will-be-updated {
+    margin-top: 0;
+}
+
+
+.region-way-account-details-delivery-new-address-wrapper, .city-way-account-details-delivery-new-address-wrapper {
+    z-index: 1001;
+    position: relative;
+}
+
+
+
+#popup-edit_delivery .delivery-step-controls {
+    clear: both;
+/*padding-top: 36px;*/
