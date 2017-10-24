@@ -1,0 +1,802 @@
+/*
+    ORDERS
+*/
+
+#orders-list {
+    border:1px solid #9c9c9c;
+    border-radius:7px;
+
+}
+.orders-list-top {
+    overflow:hidden;
+    border-bottom:1px solid #9c9c9c;
+}
+.orders-list-top-cell {
+    padding-left:12px;
+    float:left;
+    height:36px;
+    line-height:36px;
+    font-size:14px;
+    border-left:1px solid #eceaea;
+}
+.orders-list-top-check {width:23px;padding-left:12px;border-left:0;}
+.orders-list-top-name {width:158px;border-left:0;}
+.orders-list-top-files {width:233px;}
+.orders-list-top-status {width:79px;}
+.orders-list-top-delivery {width:231px;}
+
+
+.orders-list-top-payment {width:88px;}
+.orders-list-top-cost {width:68px;}
+.orders-list-top-controls {width:25px;padding-left:0;border-left:0;}
+
+.orders-list-item {
+    border-top: 1px solid #9c9c9c;
+    overflow:hidden;
+}
+.orders-list-item:first-child {
+    border-top: 0;
+    overflow:hidden;
+}
+.orders-list-item-checked {
+    background:#f0fffc;
+
+}
+.orders-list-item-cell {
+    padding-left:12px;
+    float:left;
+    height:110px;
+    font-size:12px;
+    border-left:1px solid #eceaea;
+}
+.orders-list-item-check {
+    width:23px;
+    padding-left:12px;
+    border-left:0;
+    line-height:110px;
+}
+
+.orders-list-item-name {
+    width:158px;
+    height:95px;
+    padding-top:15px;
+    line-height:20px;
+    color:#9d9d9d;
+    border-left:0;
+}
+.orders-list-item-name .order-number {color:#555555;}
+.orders-list-item-name .name {display:block;}
+.orders-list-item-delayed {color: #aaaaaa;}
+.orders-list-item-delayed .orders-list-item-name .name {
+    color:#ff0000;
+    background: url("../images/account/attention.png") no-repeat 120px 3px;
+}
+.orders-list-item-name .orders-list-item-vertical {width:158px;}
+.orders-list-item-name .circulation {color:#9d9d9d;}
+.orders-list-item-name .color {color:#9d9d9d;padding-left:5px;}
+.orders-list-item-name a .circulation {color:#9d9d9d;text-decoration:underline;}
+.orders-list-item-name a .color {color:#9d9d9d;text-decoration:underline;}
+.orders-list-item-name a:hover .circulation {text-decoration:none;}
+.orders-list-item-name a:hover .color {text-decoration:none;}
+.orders-list-item-files {width:228px;display: table;padding-right:5px;overflow:hidden;}
+.orders-list-item-files .no-image {
+    background: #ececed url('../images/no-image-small.png') 50% 50% no-repeat;
+    width:73px;
+    height:73px;
+    border-radius:5px;
+    display: block;
+    float:left;
+    overflow: hidden;
+    position:relative;
+}
+.orders-list-item-files .no-image .redactor-label {
+    position: absolute;
+    height: 20px;
+    top: 53px;
+    color: #ffffff;
+    line-height: 20px;
+    font-size: 11px;
+    width: 73px;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+}
+
+.orders-list-item-files .right {
+
+}
+.orders-list-item-files .right .top,
+.orders-list-item-files .right .bottom {
+    height:36px;
+    display: block;
+    line-height:18px;
+    overflow : hidden;
+}
+.orders-list-item-files .right .bottom {display: block;}
+.orders-list-item-status {width:74px;padding-right:5px;display: table;line-height:20px;}
+.orders-list-item-status .question-mark {display: inline-block;margin-left: 6px;margin-top: 2px;position: absolute;cursor:pointer;}
+.orders-list-item-delivery {width:231px;line-height:20px;display: table;}
+
+
+.orders-list-item-vertical {
+    display		: table-cell;
+    vertical-align	: middle;
+}
+.orders-list-item-payment {width:88px;display: table;}
+.orders-list-item-payment .payment-type {display: block;color:#9d9d9d;}
+.orders-list-item-cost {width:68px;line-height:110px;font-size:14px;text-align:left;}
+.orders-list-item-controls {width:25px;padding-left:0;border-left:0;padding-right:0px;}
+
+.orders-list-item-controls a {
+    /*float:right;*/
+    display:block;
+    width:15px;
+    height:15px;
+    margin-left:0px;
+    margin-top:47px;
+}
+.orders-list-item-controls a.edit-ico {
+    margin-top:28px;
+    background: url("../images/account/ico_edit.png") left top no-repeat;
+}
+.orders-list-item-controls a.delete-ico {
+    background:url("../images/account/delete.png") no-repeat;
+}
+.orders-list-item-controls a.edit-ico:hover,
+.orders-list-item-controls a.delete-ico:hover {
+    background-position:bottom left;
+}
+.orders-list-controls {
+    border-top: 1px solid #9c9c9c;
+    overflow:hidden;
+    padding:36px 17px;
+}
+.orders-list-controls li {
+    float:left;
+    width:290px;
+    margin-left:50px;
+}
+.orders-list-controls li:first-child {
+    margin-left:0px;
+}
+.orders-list-controls li a {
+    background-position: 10px top;
+    background-repeat: no-repeat;
+    background-color: #ebe7e7;
+    color:#9d9d9d;
+    font-size:14px;
+    display:block;
+    padding-left:55px;
+    width:235px;
+    height:46px;
+    border-radius:7px;
+    text-decoration:none;
+    padding-top:7px;
+    cursor:default;
+}
+.orders-list-controls .active li a{
+    background-position: 10px bottom;
+    background-color: #1abc9c;
+    color:#ffffff;
+    cursor:pointer;
+}
+
+.order-list-control-cashless {
+    background-image:url("../images/account/order-list-control-cashless.png");
+}
+.order-list-control-epayment {
+    background-image:url("../images/account/order-list-control-epayment.png");
+}
+.order-list-control-delivery {
+    background-image:url("../images/account/order-list-control-delivery.png");
+}
+
+.account-details-neworders-table-row-readiness-delayed {
+    cursor:pointer;
+}
+.tooltip-delayed {
+    width:245px;
+    padding:15px;
+    overflow:hidden;
+}
+.tooltip-delayed-text {
+    margin-bottom:20px;
+
+}
+.tooltip-delayed-controls {
+    overflow:hidden;
+    margin-bottom:10px;
+}
+
+.tt-white-btn {
+    width:100px;
+    float:left;
+    margin-right:20px;
+    border:2px solid #ffffff;
+    background:transparent;
+    border-radius:7px;
+    padding:0;
+    height:30px;
+    line-height:30px;
+    display:block;
+    color:#ffffff;
+    text-decoration:none;
+    text-align:center;
+    font-size:13px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.tt-white-btn:hover {
+    background:#ffffff;
+    color:#555555;
+}
+
+.tt-red-btn {
+    width:75px;
+    float:left;
+    border:2px solid #ff0000;
+    background:transparent;
+    border-radius:7px;
+    padding:0;
+    height:30px;
+    line-height:30px;
+    display:block;
+    color:#ee605f;
+    text-decoration:none;
+    text-align:center;
+    font-size:13px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.tt-red-btn:hover {
+    background:#ff0000;
+    color:#555555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.orderlist_top {
+
+}
+.orderlist_top li {
+    float: left;
+    display: inline-block;
+    padding-right: 40px;
+    position: relative;
+    font-size: 14px;
+}
+.orderlist_top li a {
+    color: #1abc9c;
+}
+.orderlist_top li.active a {
+    color: #555555;
+    text-decoration: none;
+}
+.orderlist_top li span.num {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #1abc9c;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 10px;
+    margin-top:-9px;
+    display: inline-block;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+.orderlist_top li.filter {
+    float: right;
+    padding-right: 0;
+    cursor: pointer;
+}
+.orderlist_top li.filter .selected_filter {
+    color: #1abc9c;
+    border-bottom: 1px dotted #1abc9c;
+    height: 1em;
+    line-height: 1.05em;
+    display: inline-block;
+}
+.orderlist_top li.filter .selected_filter a {
+    text-decoration: none;
+}
+.orderlist_top li.filter .arrow {
+    display: inline-block;
+    background: url('/images/profile/orders/arrow-down-grey.png') left 7px no-repeat;
+    width: 14px;
+    height: 1em;
+    line-height: 1.05em;
+    padding-right: 10px;
+}
+.orderlist_top li.filter .arrow.asc {
+    background: url('/images/profile/orders/arrow-up-grey.png') left 7px no-repeat;
+}
+
+.orderlist_controls {
+    overflow: hidden;
+    border: 1px solid #FFFFFF;
+    padding-left: 67px;
+    clear: both;
+    margin: 30px 0 16px;
+}
+.orderlist_controls.orderlist_controls_bottom {
+    margin-top: 16px;
+}
+.orderlist_controls .checkbox-all {
+    float: left;
+    width: 300px;
+}
+.orderlist_controls .checkbox-all .field {
+    height: 37px;
+    line-height: 37px;
+    margin-left: -47px;
+    position: absolute;
+}
+.orderlist_controls .checkbox-all .title {
+    font-size: 14px;
+    color: #8d8d8d;
+    line-height: 37px;
+}
+.orderlist_controls .buttons {
+    float: right;
+    width: 600px;
+}
+.orderlist_controls .buttons li {
+    float: right;
+    padding-left: 20px;
+}
+.orderlist_controls .green-btn.blocked,
+.orderlist_controls .green-btn.blocked:hover {
+    background: #e1e1e1;
+    border-color: #e1e1e1;
+    color:#ffffff;
+    cursor: not-allowed;
+}
+
+.orderlist_controls .cancel-btn {
+    padding-left: 32px;
+    position: relative;
+}
+
+.orderlist_controls .cancel-btn span {
+    font-size: 24px;
+    position: absolute;
+    margin-left: -20px;
+}
+.orderlist_controls .duplicate-btn span {
+    background: rgba(0, 0, 0, 0) url("/images/profile/orders/duplicate-ico_white.png") no-repeat scroll 0 0;
+    display: inline-block;
+    float: left;
+    height: 33px;
+    line-height: 33px;
+    padding-right: 10px;
+    width: 21px;
+}
+.orderlist_controls .duplicate-btn:hover span {
+    background-position: left bottom;
+}
+
+.orderlist_controls .delete-btn span {
+    background: rgba(0, 0, 0, 0) url("/images/profile/orders/delete-ico_white.png") no-repeat scroll 0 center;
+    display: inline-block;
+    float: left;
+    height: 30px;
+    line-height: 33px;
+    padding-right: 10px;
+    padding-top: 4px;
+    width: 15px;
+}
+.orderlist_controls .delete-btn:hover span {
+    background: rgba(0, 0, 0, 0) url("/images/profile/orders/delete-ico_grey.png") no-repeat scroll 0 center;
+}
+/**********************************************/
+/**************** ORDER ITEM ******************/
+/**********************************************/
+
+.order_item {
+    border: 1px solid #9c9c9c;
+    border-radius: 7px;
+    padding: 20px 20px 20px 67px;
+    position: relative;
+    margin-top: 16px;
+    overflow: hidden;
+    font-size: 14px;
+    clear: both;
+}
+
+/* РЎРўРђРўРЈРЎР« Р’ order_item */
+
+.order_item.need_payment .payment_status {
+    color: #FF0000;
+}
+
+
+
+
+.order_item .checkbox {
+    position: absolute;
+    margin-left: -47px;
+    height:19px;
+    line-height:19px;
+}
+.order_item .checkbox input:disabled {
+    cursor: not-allowed;
+}
+.order_item .order_number {
+    color: #1abc9c;
+    font-weight: 600;
+    font-size: 16px;
+    float: left;
+    width: 480px;
+}
+.order_item .order_number .date {
+    color: #555555;
+    font-weight: 400;
+    font-size: 14px;
+    padding-left: 5px;
+}
+.order_item .order_number .name {
+    color: #555555;
+    font-weight: 400;
+    font-size: 14px;
+    padding-top: 5px;
+    display: block;
+}
+
+.order_item .delivery_teaser {
+    float: left;
+    width: 240px;
+    font-size: 14px;
+}
+.order_item .delivery_teaser .date {
+    display: block;
+    padding-top: 7px;
+}
+.order_item .price {
+    float: right;
+    width: 180px;
+    text-align: right;
+    min-height: 67px;
+}
+.order_item .price .cost {
+    font-weight: 600;
+    font-size: 18px;
+}
+.order_item .price .payment_status {
+    padding-top: 1px;
+}
+.order_item .price .payment_status,
+.order_item .price .payment_method {
+    font-weight: 400;
+    font-size: 14px;
+    display: block;
+}
+.order_item .status {
+    clear: both;
+    position: relative;
+}
+.order_item .status .point {
+    position: absolute;
+    margin-left: -20px;
+}
+.order_item .status .point span {
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background: #1abc9c;
+    margin-top: 5px;
+}
+.order_item .status .name {
+    font-weight: 700;
+}
+.order_item .status.status_failed .point span {
+    background: #ff0000;
+}
+.order_item .status.status_failed .name {
+    color: #ff0000;
+}
+.order_item .status.status_grey .point span {
+    background: #a1a1a1;
+}
+.order_item .status.status_grey .name {
+    color: #656565;
+}
+
+.order_item .status .desc {
+    margin-top: 10px;
+}
+.order_item .status .desc a {
+    display: inline-block;
+    /* color: #1abc9c; */
+    /* border-bottom: 1px dotted #1abc9c; */
+    text-decoration: none;
+    height: 1em;
+    line-height: 1.05em;
+    /* padding: 0 15px 0 15px; */
+    line-height: 33px;
+    height: 33px;
+    margin-top: 10px;
+}
+
+
+.order_item .online_order_failed {
+    border-top: 1px solid #e1e0e0;
+    clear: both;
+    line-height: 16px;
+    margin-top: 20px;
+    overflow: hidden;
+    padding-top: 16px;
+}
+
+/* TEASER */
+
+.order_item .teaser {
+    border-top: 1px solid #e1e0e0;
+    margin-top: 16px;
+    padding-top: 16px;
+    display: none;
+}
+.order_item .teaser .params,
+.order_item .teaser .files {
+    position: relative;
+    clear: both;
+}
+.order_item .teaser .title {
+    height: 15px;
+    line-height: 15px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.order_item .teaser .title a {
+    margin-left: -20px;
+    background: url("../images/account/ico_edit.png") no-repeat left top;
+    display: block;
+    padding-left: 20px;
+    text-decoration: none;
+    max-width: 400px;
+}
+.order_item .teaser .title a:hover {
+    background-position: left bottom;
+}
+.order_item .teaser .text {
+    line-height: 18px;
+}
+.order_item .teaser .text a {
+    color: #1abc9c;
+}
+.order_item .teaser .params .params_ppo,
+.order_item .teaser .params .params_basic {
+    line-height: 24px;
+    width: 300px;
+    float: left;
+}
+
+.order_item .teaser .files {
+    margin-top: 30px;
+    width: 480px;
+    float: left;
+}
+.order_item .teaser .files_error {
+    margin-top: 30px;
+    float: left;
+    width: 350px;
+}
+.order_item .teaser .files_error .title_error {
+    color: #FF0000;
+    height: 17px;
+    line-height: 17px;
+    margin-left: -26px;
+    padding-left: 26px;
+    background: url("/images/info.bad.png") left top no-repeat;
+}
+.order_item .teaser .files_error .title_corrected {
+    color: #555555;
+    height: 17px;
+    line-height: 17px;
+    margin-left: -26px;
+    padding-left: 26px;
+    background: url("/images/info.png") left top no-repeat;
+}
+.order_item .teaser .files_error .list {
+    color: #AAAAAA;
+}
+.order_item .teaser .payment {
+    margin-top: 30px;
+    float: left;
+    width: 480px;
+}
+.order_item .teaser .delivery {
+    margin-top: 30px;
+    float: left;
+    width: 370px;
+}
+.order_item .teaser .manager {
+    margin-top: 30px;
+}
+
+/* BOTTOM */
+
+
+.order_item .bottom {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid #e1e0e0;
+    overflow: hidden;
+    line-height: 15px;
+    clear: both;
+}
+.order_item .bottom .more_info_link,
+.order_item .bottom .more_info_link_close {
+    color: #1abc9c;
+    float: left;
+    cursor: pointer;
+    line-height: 22px;
+    height: 22px;
+    display: block;
+    padding-right: 15px;
+}
+.order_item .bottom .more_info_link {
+    background: rgba(0, 0, 0, 0) url("/images/step2/green-vertical-arrow.png") no-repeat scroll right top;
+}
+.order_item .bottom .more_info_link_close {
+    background: rgba(0, 0, 0, 0) url("/images/step2/green-vertical-arrow.png") no-repeat scroll right bottom;
+}
+.order_item .bottom .more_info_link span,
+.order_item .bottom .more_info_link_close span {
+    border-bottom: 1px dotted #19b294;
+    display: inline-block;
+    height: 1em;
+    line-height: 1.05em;
+}
+.order_item .bottom .more_info_link_close {
+    display: none;
+}
+.order_item .bottom .cancel,
+.order_item .bottom .duplicate,
+.order_item .bottom .delete {
+    float: right;
+    line-height: 16px;
+    height: 16px;
+    display: block;
+    padding-left: 38px;
+    margin-top: 3px;
+
+}
+.order_item .bottom .cancel a {
+    color: #1abc9c;
+    line-height: 15px;
+    padding-left: 20px;
+    background: url('/images/profile/orders/cancel.png') no-repeat;
+    text-decoration: none;
+    display: block;
+}
+.order_item .bottom .cancel a.blocked {
+    background-position: left bottom;
+    color: #8d8d8d;
+    cursor: not-allowed;
+}
+.order_item .bottom .delete a {
+    color: #1abc9c;
+    line-height: 15px;
+    padding-left: 25px;
+    background: url('/images/profile/orders/delete-ico_grey.png') no-repeat;
+    text-decoration: none;
+    display: block;
+}
+.order_item .bottom .duplicate a {
+    color: #1abc9c;
+    line-height: 16px;
+    padding-left: 30px;
+    background: url('/images/profile/orders/duplicate-ico_grey.png') no-repeat;
+    text-decoration: none;
+    display: block;
+}
+
+/* DELAYED */
+
+.order_item.order_item_delayed {
+    border: 1px solid #ff0000;
+    background: #f5f4f4;
+}
+.order_item.order_item_delayed .order_number {
+    color: #ff0000;
+}
+
+
+
+/* HISTORY BOTTOM NAVIGATION */
+
+.history-nav-wrapper {
+    clear:both;
+    /*padding-top:20px;*/
+    /* margin-left:60px;*/
+    overflow: hidden;
+}
+
+.history-nav-wrapper .dop-wrapper {
+    position: relative;
+    float: right;
+    right: 50%;
+}
+.history-nav-wrapper ul {
+    position: relative;
+    float: left;
+    left: 50%;
+}
+.history-nav-wrapper ul li {
+    float:left;
+    padding: 0 10px;
+    height:36px;
+    line-height:36px;
+    font-size:12px;
+}
+.history-nav-wrapper ul li.prev {
+    padding: 0 40px 0 0;
+}
+.history-nav-wrapper ul li.next {
+    padding: 0 0 0 40px;
+}
+
+.history-nav-wrapper ul li a {
+    text-decoration:none;
+}
+.history-nav-wrapper ul li.active {
+    margin:0 10px;
+    width:36px;
+    border-radius: 18px;
+    padding:0;
+    background: #1abc9c;
+    color:#ffffff;
+    text-align:center;
+
+}
+.history-nav-wrapper ul li.active a {
+    color:#ffffff;
+}
+.order_item.active {
+    background: #f5fffd;
+    cursor: pointer;
+}
+
+.account-details-delivery-table-row-add {
+    color:#19b294;
+}
+.account-details-delivery-table-row-add a {
+    color:#19b294;
+}

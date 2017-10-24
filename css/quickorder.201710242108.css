@@ -1,0 +1,403 @@
+.quickorder-type-settings {
+    overflow:hidden;
+    /*margin-bottom:20px;*/
+}
+.quickorder-type-settings a,
+.quickorder-type-settings span {
+    display: block;
+    float: left;
+    padding: 7px 0;
+    width:170px;
+    text-align: center;
+    font-weight:600;
+    font-size:14px;
+}
+.quickorder-type-settings a {
+    text-decoration:none;
+    color:#1abc9c;
+}
+.quickorder-type-settings a:hover {
+    background:#cafff5;
+    color:#1abc9c;
+}
+.quickorder-type-settings li.transparent a:hover {
+    text-decoration:none;
+    background:#ffffff;
+    color:#1abc9c;
+    cursor: default;
+}
+.quickorder-type-settings span {
+    background:#1abc9c;
+    color:#fff;
+}
+
+.quickorder-type-settings li {
+    float: left;
+}
+
+.quickorder-type-settings li a {
+    border:1px solid #1abc9c;
+}
+
+.quickorder-type-settings li:first-child a {
+    border-left:1px solid #1abc9c;
+    border-bottom:1px solid #1abc9c;
+    border-top:1px solid #1abc9c;
+    border-top-left-radius:7px;
+    border-bottom-left-radius:7px;
+    border-right: 0;
+}
+
+.quickorder-type-settings li:last-child a {
+    border-right:1px solid #1abc9c;
+    border-bottom:1px solid #1abc9c;
+    border-top:1px solid #1abc9c;
+    border-top-right-radius:7px;
+    border-bottom-right-radius:7px;
+    border-left: 0;
+}
+
+.quickorder-type-settings li.active a,
+.quickorder-type-settings li.active a:hover {
+    background-color: #1abc9c;
+    color: #FFFFFF;
+}
+.quick-order-step {
+    clear: both;
+    padding-top: 40px;
+    border-top: 1px solid #e1e0e0;
+}
+.quick-order-step.first {
+    border-top: 0;
+}
+.quick-order-step-title {
+    overflow: hidden;
+    margin-bottom: 26px;
+}
+.quick-order-step-title .num {
+    width: 31px;
+    height: 31px;
+    float: left;
+}
+.quick-order-step-title .text {
+    padding-left: 13px;
+    font-size: 22px;
+    color: #1abc9c;
+    line-height: 31px;
+    float: left;
+    width: 800px;
+}
+.quick-order-step-upload {
+
+}
+.quick-order-step-upload .new-upload_layouts-form-top {
+    width: 1004px;
+}
+.quick-order-step-upload .upload_layout-add-link-wrapper .field input {
+    width: 860px;
+    font-size: 14px;
+}
+.quick-order-step-upload .upload_layout-warning .close {
+    left: 975px;
+}
+.quick-order-step-upload #layouts_filelist {
+    width: 1008px;
+}
+.quick-order-step-upload .upload_layouts-form-item-name {
+    width: 850px;
+}
+
+.quickorder-select-manager {
+    padding: 33px 0 0px;
+    position: relative;
+}
+.quickorder-select-manager-label {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.quickorder-select-manager .quick-order-step-params-legend {
+    margin-top: 5px;
+}
+.width-504 {
+    width: 504px;
+}
+
+.quick-order-step-params,
+.quick-order-step-contacts {
+    position: relative;
+    font-size: 14px;
+}
+.quick-order-step-params-legend {
+    position: absolute;
+    left: 550px;
+    color: #a1a1a1;
+    overflow: hidden;
+    font-size: 14px;
+}
+.quick-order-step .required {
+    color: #ea6060;
+    font-weight: 700;
+}
+.quick-order-step-params-legend .left {
+    width: 35px;
+    float: left;
+}
+.quick-order-step-params-legend .right {
+    width: 390px;
+    float: left;
+}
+.quick-order-step-params .label,
+.quick-order-step-contacts .label {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.quick-order-step-params .field,
+.quick-order-step-contacts .field {
+    position: relative;
+}
+
+.quick-order-step-params input,
+.quick-order-step-contacts input {
+    border-image: none;
+    border-radius: 4px;
+    border:1px solid #9c9c9c;
+    color: #555555;
+    height: 34px;
+    line-height: 34px;
+    padding: 0 10px 0 10px;
+    font-size: 14px;
+    margin:2px;
+}
+.quick-order-step-params input.error,
+.quick-order-step-contacts input.error {
+    border:2px solid #ea6060;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 9px 0 9px;
+    margin:1px;
+}
+.quick-order-step-params input:focus,
+.quick-order-step-contacts input:focus {
+    border:3px solid #77fce2;
+    margin:0;
+    outline: none;
+}
+.quick-order-step-params textarea,
+.quick-order-step-contacts textarea {
+    border-image: none;
+    border-radius: 4px;
+    border: 1px solid #9c9c9c;
+    color: #555555;
+    height: 118px;
+    padding: 10px;
+    font-size: 14px;
+    resize: none;
+    margin:2px;
+}
+.quick-order-step-params textarea:focus,
+.quick-order-step-contacts textarea:focus {
+    border:3px solid #77fce2;
+    margin:0;
+    outline: none;
+}
+.quick-order-step-params-sizes {
+    width: 304px;
+    float: left;
+}
+.quick-order-step-params-sizes input {
+    width: 64px;
+    /*text-align: center;*/
+}
+
+.quick-order-step-params-sizes .separator-x {
+    font-size: 18px;
+    padding: 0 10px;
+}
+.quick-order-step-params-sizes .end-text {
+    padding-left: 10px;
+}
+.quick-order-step-params-product {
+    width: 180px;
+    float: left;
+    margin-top: 40px;
+}
+.quick-order-step-params-product input {
+    width: 178px;
+}
+/*.quick_basic-order-step*/
+.quick-order-step-params-color {
+    width: 180px;
+    float: left;
+}
+.quick-order-step-params-color .field {
+    margin-top: 10px;
+    width: 135px;
+    position: relative;
+}
+.quick-order-step-params-density {
+    clear: both;
+    width: 304px;
+    margin-top: 40px;
+    float: left;
+}
+.width-200 {
+    width: 200px;
+}
+.quick-order-step-params-density .jq-selectbox__select {
+    border-radius: 4px;
+    border-color: #9c9c9c;
+}
+.quick-order-step-params-circulation {
+    /*clear: both;*/
+    width: 180px;
+    margin-top: 40px;
+    float:left;
+}
+.quick-order-step-params-circulation input {
+    width: 178px;
+}
+.quick_basic-order-step .quick-order-step-params-circulation {
+    clear: none;
+    width: 180px;
+    margin-top: 40px;
+    float:left;
+}
+
+.quick-order-step-params-comment {
+    clear: both;
+    width: 502px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.quick-order-step-params-comment textarea {
+    width: 480px;
+}
+.quick-order-step-params-ready_date {
+    margin-bottom: 40px;
+}
+.quick-order-step-params-ready_date .field span {
+    padding-left: 10px;
+    padding-right: 20px;
+}
+.quick-order-step-contacts {
+    /*overflow: hidden;*/
+}
+.quick-order-step-contacts-person {
+    margin-bottom: 40px;
+}
+.quick-order-step-contacts-person input {
+    width: 480px;
+}
+.quick-order-step-contacts-email {
+    width: 304px;
+    float: left;
+}
+.quick-order-step-contacts-phone {
+    width: 200px;
+    float: left;
+}
+.quick-order-step-contacts-email input,
+.quick-order-step-contacts-phone input {
+    width: 178px;
+}
+.quick-order-step-params-product {
+    width: 304px;
+    float: left;
+}
+.quick-order-controls {
+    margin-top: 50px;
+}
+.quick-order-controls .btn-wrap {
+    width: 200px;
+    height: 51px;
+    border-radius: 6px;
+    background: #169c81;
+}
+.quick-order-controls .btn-wrap a {
+    display: block;
+    width: 200px;
+    height: 48px;
+    line-height: 48px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
+    background: #1abc9c;
+    text-align: center;
+}
+.quick-order-controls .btn-wrap a:hover {
+    background: #25deb3;
+}
+
+
+.quick-order-step-success {
+    font-size: 14px;
+}
+.quick-order-step-success p {
+    margin-bottom: 20px;
+}
+.quick-order-step-success-manager {
+    padding-top: 15px;
+}
+.quick-order-step-success-manager a.email {
+    color: #1abc9c;
+}
+.quick-order-step-success-manager a.phone {
+    color: #555555;
+    text-decoration: none;
+}
+
+.quick-order-step .error-message {
+    color: #ea6060;
+    position: absolute;
+    margin-top: 5px;
+}
+
+/* TOGGLE SWITCH BUTTON - gm style */
+
+.switch-light.switch-candy.gm-switch span span,
+.switch-light.switch-candy.gm-switch input:checked ~ span span:first-child,
+.switch-toggle.switch-candy.gm-switch label {
+    color: #555555;
+    font-weight: 400;
+    text-shadow: none;
+}
+.switch-light.switch-candy.gm-switch {
+    border: 1px solid #9c9c9c;
+    padding: 2px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.switch-light.switch-candy.gm-switch input ~ span span:first-child,
+.switch-light.switch-candy.gm-switch input:checked ~ span span:nth-child(2),
+.switch-candy.gm-switch input:checked + label {
+    color: #ffffff;
+    text-shadow: none;
+}
+.switch-candy.gm-switch a {
+    background: #1abc9c;
+    background-image: none;
+    border: 0;
+    box-shadow: none;
+}
+.switch-toggle.switch-candy.gm-switch,
+.switch-light.switch-candy.gm-switch > span {
+    background-color: #ffffff;
+    box-shadow: none;
+}
+.switch-light.gm-switch > span {
+    min-height: 30px;
+    font-size:14px;
+}
+.switch-light.gm-switch label,
+.switch-light.gm-switch > span {
+    line-height: 30px;
+    font-size:14px;
+}
+.switch-light.gm-switch input:focus ~ span a,
+.switch-light.gm-switch input:focus + label {
+    outline-width: 0;
+}
