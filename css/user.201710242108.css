@@ -1,0 +1,475 @@
+.panel {
+    width:1080px;
+    position:absolute;
+    margin-top:0;
+    z-index:1000;
+    display:none;
+}
+.panel-top {
+    height:54px;
+    background:#1abc9c;
+}
+#panel .panel-arrow {
+    height:21px;
+    overflow:hidden;
+    margin-left:406px;
+}
+.panel-top-menu {
+    padding-top:15px;
+    float:left;
+    margin-left:15px;
+}
+.panel-top-menu ul li {
+    float:left;
+    margin:0 5px;
+}
+.panel-top-menu ul li a {
+    padding:5px 20px;
+    color:#ffffff;
+    text-decoration:none;
+    border:2px solid #1abc9c;
+    font-size:16px;
+    border-radius:7px;
+}
+.panel-top-menu ul li.active a {
+    border:2px solid #ffffff;
+}
+.panel-top-close {
+    float:right;
+    margin-right:40px;
+    margin-top:13px;
+
+}
+.panel-top-close a {
+    height:28px;
+    width:28px;
+    display:block;
+    background:url("../images/panel/close.png") no-repeat;
+}
+.panel-content {
+    /*background-color:rgba(238,238,238,0.95);*/
+    background-color:rgba(238,238,238,1);
+    padding:30px 0;
+    box-shadow: 0 8px 16px -3px #838383;
+}
+
+.panel-content-title {
+    font-size:24px;
+    padding-bottom:15px;
+    padding-left:40px;
+
+}
+.panel-content span {
+    font-size:18px;
+}
+
+/* REQUISITE */
+
+.panel-content-requisite-list ul {
+    margin-bottom:30px;
+}
+.panel-content-requisite-list li {
+    padding:0 40px;
+    border-bottom:1px solid #555555;
+}
+.panel-content-requisite-list-item {
+    height:54px;
+    line-height:54px;
+}
+.panel-content-requisite-list li:first-child {
+    border-top:1px solid #555555;
+}
+.panel-content-requisite-list li .name {
+    float:left;
+    font-size:14px;
+    cursor:pointer;
+}
+.panel-content-requisite-list li .icons {
+    float:right;
+}
+.panel-content-requisite-list li .icons a {
+    margin-left:7px;
+    float:left;
+    display:block;
+    width:15px;
+    height:15px;
+    margin-top:19px;
+}
+.panel-content-requisite-list li .icons .icon-view {
+    background:url("../images/panel/view.png") top left no-repeat;
+}
+.panel-content-requisite-list li .icons .icon-view.active {
+    background-position:bottom left;
+}
+.panel-content-requisite-list li .icons .icon-delete {
+    background:url("../images/panel/delete.png") top left no-repeat;
+}
+
+.panel-content-requisite-list li .icons a:first-child {
+    margin-top:20px;
+}
+.panel-content-add-company-link {
+    margin:0 auto;
+    width:245px;
+}
+.panel-content-add-company {
+    padding:0 40px;
+    display:none;
+}
+.panel-content-add-company-title {
+    font-size:24px;
+    margin-bottom:25px;
+}
+.panel-content-add-company-form {
+    overflow:hidden;
+}
+.panel-content-add-company-form-input {
+    width:266px;
+    float:left;
+    margin-right:40px;
+}
+.panel-content-add-company-form-input input {
+    background:#ffffff;
+    border-radius:7px;
+    width:240px;
+    padding:0 10px;
+    height:36px;
+    line-height:36px;
+    color:#555555;
+    font-size:14px;
+    border:1px solid #a2a2a2;
+    margin:2px;
+}
+.panel-content-add-company-form-input input:focus
+{
+    border:3px solid #77fce2;
+    margin:0;
+    outline: none;
+}
+.panel-content-add-company-form-cancel {
+    width:116px;
+    margin-right:20px;
+    margin-top:2px;
+    float:left;
+}
+.panel-content-add-company-form-submit {
+    width:142px;
+    float:left;
+    margin-top:2px;
+}
+
+.panel-content-requisite-edit {
+    overflow:hidden;
+    padding:15px 0 10px;
+
+}
+.panel-content-requisite-edit-left {
+    width:525px;
+    float:left;
+}
+.panel-content-requisite-edit-right {
+    width:475px;
+    float:left;
+}
+.panel-content-requisite-edit input {
+    background:#ffffff;
+    border-radius:7px;
+    padding:0 10px;
+    height:32px;
+    line-height:32px;
+    color:#555555;
+    font-size:14px;
+    border:1px solid #a2a2a2;
+    margin:2px;
+}
+.panel-content-requisite-edit-right input {
+    width:444px;
+}
+.panel-content-requisite-edit-left input {
+    width:444px;
+}
+.panel-content-requisite-edit .form-item {
+    padding-bottom:25px;
+}
+.panel-content-requisite-edit .form-item-input a {
+    margin-left:20px;
+}
+.panel-content-requisite-edit .form-item-label {
+    font-size:14px;
+    padding-bottom:10px;
+    height:14px;
+    font-weight:600;
+}
+.panel-content-requisite-edit input:focus
+{
+    border:3px solid #77fce2;
+    margin:0;
+    outline: none;
+}
+.panel-content-requisite-edit input:disabled {
+    color:#939292;
+    background:transparent;
+}
+.panel-content-add-company-info {
+    border-radius:7px;
+    border:1px solid #555555;
+    margin:0 25px;
+    padding:25px 0 0 55px;
+    overflow:hidden;
+}
+.panel-content-add-company-info-left {
+    width:570px;
+    float:left;
+}
+.panel-content-add-company-info-right {
+    width:320px;
+    float:left;
+}
+.panel-content-add-company-info .form-item {
+    padding-bottom:25px;
+}
+.panel-content-add-company-info .form-item-label {
+    font-size:14px;
+    padding-bottom:10px;
+    height:14px;
+    font-weight:600;
+}
+.panel-content-add-company-info .form-item-input {
+    font-size:16px;
+}
+.panel-content-add-company-use {
+    margin-top:20px;
+}
+.panel-content-add-company-use-title {
+    font-size:16px;
+    font-weight:600;
+    text-align:center;
+    margin-bottom:10px;
+}
+.panel-content-add-company-use-buttons {
+    width:310px;
+    margin:0 auto;
+    overflow:hidden;
+}
+.panel-content-add-company-use-buttons a {
+    float:left;
+    margin:0 10px;
+}
+
+/* PRIVATE DATA */
+
+.private-data-content {
+    overflow:hidden;
+    padding:0 40px;
+}
+.private-data-content-main {
+    width:585px;
+    float:left;
+    padding-right:60px;
+    padding-bottom:10px;
+    border-right:1px solid #696969;
+}
+.private-data-content-main .panel-content-title,
+.private-data-content-password .panel-content-title {
+    padding-left:0;
+}
+.private-data-content-main-left {
+    width:310px;
+    float:left;
+}
+.private-data-content-main-right {
+    width:275px;
+    float:left;
+}
+.private-data-content-password {
+    width:300px;
+    padding-left:50px;
+    float:left;
+}
+.private-data-content .form-item {
+    padding-left:25px;
+    margin-bottom:30px;
+}
+.private-data-content .form-item input {
+    background:#ffffff;
+    border-radius:7px;
+    padding:0 10px;
+    height:32px;
+    line-height:32px;
+    color:#555555;
+    font-size:14px;
+    border:1px solid #a2a2a2;
+    margin:2px;
+}
+.private-data-content .form-item input:focus {
+    border:3px solid #77fce2;
+    margin:0;
+    outline: none;
+}
+.private-data-content .form-item input:disabled {
+    background:transparent;
+    color:#939292;
+}
+.private-data-content-main-right .form-item {
+    padding-left:30px;
+
+}
+.private-data-content-main-info {
+    font-size:12px;
+    padding-left:35px;
+    clear:both;
+    margin-top:-5px;
+    margin-bottom:20px;
+    background:url("../images/info.png") no-repeat;
+}
+.private-data-content-main-controls {
+    padding-top:10px;
+    overflow:hidden;
+    margin-right:2px;
+}
+.private-data-content-main-controls a {
+    float:right;
+    margin-left:20px;
+}
+.private-data-content-main-left input {
+    width:210px;
+}
+.private-data-content-main-right input {
+    width:219px;
+}
+.private-data-content-password input {
+    width:225px;
+}
+.private-data-content-password .form-item {
+    padding-left:30px;
+}
+.private-data-content-password .password-retry {
+    margin-top:-20px;
+}
+.private-data-content-password-controls {
+    width:280px;
+}
+.user-icon {
+    background:url("../images/panel/icons/user.png") 0 0 no-repeat;
+}
+.phone-icon {
+    background:url("../images/panel/icons/phone.png") 0 0 no-repeat;
+}
+.mail-icon {
+    background:url("../images/panel/icons/mail.png") 0 0 no-repeat;
+}
+.password-icon {
+    background:url("../images/panel/icons/password.png") 0 0 no-repeat;
+}
+.city-icon {
+    background:url("../images/panel/icons/marker.png") 0 0 no-repeat;
+}
+.active-icons .user-icon {
+    background:url("../images/panel/icons/user.png") left bottom no-repeat;
+}
+.active-icons .phone-icon {
+    background:url("../images/panel/icons/phone.png") left bottom no-repeat;
+}
+.active-icons .mail-icon {
+    background:url("../images/panel/icons/mail.png") left bottom no-repeat;
+}
+.active-icons .password-icon {
+    background:url("../images/panel/icons/password.png") left bottom no-repeat;
+}
+.active-icons .city-icon {
+    background:url("../images/panel/icons/marker.png") left bottom no-repeat;
+}
+
+
+a.wgreen-btn.not-active {
+    background:transparent;
+    color:#cecece;
+    border-color:#cecece;
+}
+a.wgreen-btn.not-active:hover {
+    background:transparent;
+    color:#cecece;
+    border-color:#cecece;
+}
+
+
+
+
+
+
+/* AUTH FORM */
+
+.auth-choose-action-type {
+    margin-bottom: 20px;
+}
+.auth-choose-action-type li {
+    padding: 0 0 16px;
+}
+.auth-choose-action-type li .label {
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+.popup-auth_reg-right .popup-registration-item input.auth-password {
+    width:275px;
+    padding-right: 40px;
+}
+.popup-auth_reg-left .popup-auth-item input.auth-password::-ms-reveal,
+.popup-auth_reg-right .popup-registration-item input.auth-password::-ms-reveal {
+    display: none;
+}
+.password-eye {
+    height: 35px;
+    width: 21px;
+    position: absolute;
+    left: 300px;
+    top: 3px;
+    background: url("/images/password-eye.png") top left no-repeat;
+    cursor:pointer;
+    z-index:11;
+}
+.account-details-profile-row-password-change .password-eye {
+    left:205px;
+    top:6px;
+}
+.password-eye.active {
+    background-position: bottom left;
+}
+#popup-auth_reg-window .popup-basic-content {overflow:hidden;padding:36px;}
+.popup-auth_reg-left {width:335px;}
+.popup-auth_reg-right {width:335px;}
+.popup-auth_reg-left .popup-auth-item {
+    padding:0 0 30px;
+}
+.popup-auth_reg-left .popup-auth-item input,
+.popup-auth_reg-right .popup-registration-item input{
+    width: 300px;
+}
+.width-334 {width:334px;}
+.popup-auth_reg-left .popup-auth-controls {
+    padding:30px 0 0 0;
+}
+#popup-auth_reg-window .error {
+    color: #FF0000;
+    background: url("/images/info_red.png") 0 4px no-repeat;
+    clear: both;
+    font-size: 13px;
+    padding-left: 30px;
+    line-height: 18px;
+    margin-top: 20px;
+    padding-top: 5px;
+}
+#popup-auth_reg-window .reg-error {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+#popup-auth_reg-window .message {
+    color: #555555;
+    background: url("/images/info.png") 0 4px no-repeat;
+    clear: both;
+    font-size: 13px;
+    margin-bottom: 0;
+    margin-top: -20px;
+    padding-left: 30px;
+    line-height:24px;
+}
