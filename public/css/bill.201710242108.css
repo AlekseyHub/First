@@ -1,0 +1,146 @@
+.bill-main-block  {
+    width:650px;
+    margin:0 auto;
+    border:1px solid #d7d7d7;
+    border-bottom:0;
+    box-shadow: 0 8px 10px 0 #ebebeb;
+    z-index:5;
+    padding: 36px 30px 18px;
+
+}
+.bill-main-title {
+    color:#1abc9c;
+    font-size:22px;
+    text-align:center;
+    margin-bottom:10px;
+}
+.bill-main-title span {
+    font-weight:600;
+}
+.bill-main-info {
+    text-align:center;
+    font-size:14px;
+    margin-bottom:15px;
+}
+
+.bill-main-orders-item {
+    font-size:14px;
+    padding-top:10px;
+    padding-left: 30px;
+}
+.bill-main-orders-item-edit {
+    position:absolute;
+    margin-left:-30px;
+    margin-top:-5px;
+}
+.bill-main-orders-item-edit a.edit-ico {
+    display:block;
+    width:15px;
+    height:15px;
+    background: url("../images/account/ico_edit.png") left top no-repeat;
+}
+.bill-main-orders-item-edit a.edit-ico:hover {
+    background-position:left bottom;
+
+}
+.bill-main-orders-item-title {
+    border-top:1px dashed #7c7b74;
+    position:relative;
+}
+.bill-main-orders-item-title span {
+    display:block;
+    font-weight:700;
+    line-height:14px;
+    height:14px;
+    background:#ffffff;
+    padding-right:5px;
+    position:absolute;;
+    top:-7px;
+}
+
+.bill-main-orders-item-basic {
+    margin:15px 0 30px;
+    overflow:hidden;
+}
+.bill-main-orders-item-delivery {
+    margin:0 0 10px;
+    overflow:hidden;
+}
+.bill-main-orders-item-basic-info,
+.bill-main-orders-item-delivery-info {
+    width:490px;
+    float:left;
+    line-height:30px;
+}
+.bill-main-orders-item-basic-price,
+.bill-main-orders-item-delivery-price {
+    width:130px;
+    float:left;
+    font-weight:700;
+    text-align:right;
+    line-height:30px;
+}
+.bill-main-orders-item-basic-info,
+.bill-main-orders-item-basic-price {line-height:30px;}
+.bill-main-orders-item-delivery-info,
+.bill-main-orders-item-delivery-price {line-height:24px;}
+
+.bill-main-total {
+    padding-top:35px;
+    border-top:1px dashed #7c7b74;
+    overflow:hidden;
+    font-size:18px;
+    text-align:right;
+    margin-bottom:10px;
+}
+.bill-main-total-text {
+    padding-right:15px;
+}
+.bill-main-total-sum {
+    font-weight:700;
+    color:#1abc9c;
+}
+.bill-bottom {
+    width:722px;
+    margin:0 auto;
+    height:20px;
+    background:url("../images/order/bill/bill-bottom.png") no-repeat;
+    z-index:10;
+}
+.bill-main-controls {
+    width:164px;
+    margin:25px auto 0;
+    overflow:hidden;
+}
+.bill-main-controls.with-account {
+    width:612px;
+}
+.bill-main-controls a {
+    float:left;
+    margin:0 15px;
+}
+.bill-main-controls .finish-bill {
+    width:130px;
+    margin:0;
+}
+.bill-main-controls .see-bill {
+    width:160px;
+}
+.bill-main-controls .save-bill {
+    width:130px;
+}
+.bill-main-controls.with-account .finish-bill {
+    margin:0 15px;
+
+}
+
+.bill-main-orders-item-without-files {
+    width:425px;
+    padding:10px 25px;
+    margin:20px auto 25px;
+    border:2px solid #ff0000;
+    border-radius:7px;
+    text-align:center;
+    color:#ff0000;
+    clear:both;
+}

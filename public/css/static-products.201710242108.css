@@ -1,0 +1,654 @@
+.static-price-block {
+    margin-bottom: 40px;
+    overflow:hidden;
+}
+.static-price-block .static-price-block-image {
+    /* width: 220px; */
+    /* height: 220px; */
+    /* background: 50% 50% no-repeat; */
+    float: left;
+    /* text-align: center; */
+    /* padding-top: 7%; */
+    display: inline-flex;
+    /*flex-direction: column;*/
+    justify-content: center;
+}
+.static-price-block-content {
+    float:left;
+    margin-left:35px;
+    width:747px;
+}
+.static-price-block-content-title {
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+.static-price-block-content-title span {
+    font-weight:400;
+    font-size:12px;
+    color:#aaaaaa;
+}
+.static-price-block-content-attention {
+    background:url("../images/info.png") no-repeat;
+    font-size:14px;
+    line-height:17px;
+    padding-left:30px;
+    margin-top:20px;
+
+}
+
+/* РљР°Р»РµРЅРґР°СЂСЊ */
+
+
+/* РїРµСЂРµРєРёРґРЅРѕР№ РєР°Р»РµРЅРґР°СЂСЊ */
+.calendar-double_throw-wrapper .static-price-block-image {
+    background-image:url("../images/product_images/calendars/double-throw.jpg");
+    margin-top:25px;
+}
+
+/* РєР°Р»РµРЅРґР°СЂСЊ РґРѕРјРёРє */
+.calendar-house-wrapper .static-price-block-image {
+    background-image:url("../images/product_images/calendars/house.jpg");
+}
+.calendar-house-wrapper .static-price-block-content {
+    margin-top:40px;
+}
+.calendar-house-wrapper {
+    margin-bottom:95px;
+}
+
+/* РєР°СЂРјР°РЅРЅС‹Р№ РєР°Р»РµРЅРґР°СЂРёРє */
+.calendar-pocket-wrapper .static-price-block-image {
+    background-image:url("../images/product_images/calendars/pocket.jpg");
+    margin-top:25px;
+}
+
+
+
+.tabs-table-header td {
+    font-size:13px;
+    font-weight:600;
+    line-height:34px;
+    text-align:center;
+
+}
+.tabs-table-header .tabs-table-header-title {
+    text-align:left;
+    padding-left:15px;
+}
+.tabs-table-row {
+
+}
+.tabs-table-row td {
+    border-top:1px solid #e1e0e0;
+    font-size:12px;
+    line-height:52px;
+    text-align:center;
+
+}
+
+.tabs-table-row .tabs-table-row-title {
+    border-right:1px solid #e1e0e0;
+    width:135px;
+    padding-left:15px;
+    text-align:left;
+}
+
+
+
+.tabs-table-row .tabs-table-row-title-pocket {
+    height:36px;
+    line-height:18px;
+    padding:8px 0 8px 15px;
+    border-right:1px solid #e1e0e0;
+    width:165px;
+    text-align:left;
+}
+
+
+
+.ui-state-default {
+    font-size:12px;
+    font-weight:400;
+    color:#aaaaaa;
+}
+.ui-state-active {
+    font-size:14px;
+    font-weight:600;
+}
+
+.ui-tabs {
+    padding:0;
+}
+
+.ui-tabs .ui-tabs-panel  {
+    border:1px solid #9c9c9c;
+    padding:0;
+    border-radius:5px;
+
+}
+.ui-tabs .ui-tabs-nav {
+    padding:0;
+}
+
+.ui-tabs .ui-tabs-nav li {
+    margin:0;
+}
+
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    border-left:1px solid #edecec;
+    border-top:1px solid #edecec;
+    border-top-left-radius:5px;
+    margin: 9px 0 0;
+    padding:10px 20px;
+    color:#aaaaaa;
+
+}
+.ui-tabs .ui-tabs-nav .ui-state-active {
+    top:1px;
+    margin:0;
+}
+.ui-tabs .ui-tabs-nav .ui-state-active .ui-tabs-anchor {
+    border:1px solid #9c9c9c;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    border-bottom:1px solid #e1e0e0;
+    margin:0;
+    padding:13px 25px;
+    color:#555555;
+}
+.ui-tabs .ui-tabs-nav .ui-state-active + li .ui-tabs-anchor {
+    border-left:0 solid #edecec;
+    border-right:1px solid #edecec;
+    border-top:1px solid #edecec;
+    border-top-left-radius:0;
+    border-top-right-radius:5px;
+}
+.ui-tabs .ui-tabs-panel.first-tab {
+    border-top-left-radius:0;
+}
+#price-table-house {
+    border:1px solid #9c9c9c;
+    border-radius:5px;
+}
+
+
+.static-price-block-features-list {
+    overflow:hidden;
+    margin-top:25px;
+}
+.static-price-block-feature {
+    float:left;
+    font-size:12px;
+}
+.static-price-block-feature-cover {
+    width:200px
+}
+.static-price-block-feature-calblock {
+    width:200px
+}
+.static-price-block-feature-substrate {
+    width:230px
+}
+.static-price-block-feature-spring {
+    width:115px
+}
+.static-price-block-feature-title {
+    font-weight:600;
+    margin-bottom:8px;
+}
+.static-price-block-feature-text {
+    line-height:20px;
+}
+.static-price-block-feature-spring .static-price-block-feature-text span {
+    float:left;
+    margin-right:5px;
+}
+.static-price-block-feature-spring span.color {
+    width:18px;
+    height:18px;
+    border-radius:10px;
+    border:1px solid #000000;
+    margin-left:15px;
+    margin-right:0;
+    display:block;
+}
+.static-price-block-feature-spring span.black.color {
+    background:#000000;
+}
+
+/* РџР°РєРµС‚С‹ */
+
+.pocket-paper_item-wrapper .static-price-block-image {
+    background-image:url("../images/product_images/bags/paper-bag.jpg");
+}
+.pocket-paper_item-wrapper .static-price-block-content {
+    margin-top:40px;
+}
+.paperbag-ppo-wrapper {}
+.paperbag-ppo-title {
+    font-size:22px;
+    color:#1abc9c;
+    margin-bottom:30px;
+}
+.paperbag-ppo-list {
+    overflow:hidden;
+}
+.paperbag-ppo-list li {
+    float:left;
+    width:220px;
+    margin-left:170px;
+    text-align:center;
+}
+.paperbag-ppo-list li:first-child {margin-left:0;}
+.paperbag-ppo-item-image {
+    margin-bottom:20px;
+}
+.paperbag-ppo-item-title {
+    font-size:14px;
+}
+.paperbag-ppo-item-text {
+    font-size:12px;
+    color:#aaaaaa;
+    margin-top:5px;
+}
+
+
+.paperbag-sizes-wrapper {}
+.paperbag-sizes-title {
+    font-size:22px;
+    color:#1abc9c;
+    margin-bottom:30px;
+}
+.paperbag-sizes-list {
+    overflow:hidden;
+    margin-bottom:-35px;
+}
+.paperbag-sizes-list li {
+    float:left;
+    width:480px;
+    text-align:center;
+    border:1px solid #a3a3a3;
+    border-radius:5px;
+    height:250px;
+    margin-bottom:35px;
+    overflow:hidden;
+}
+.paperbag-sizes-list li:nth-child(2n){
+    margin-left:35px;
+}
+
+.paperbag-sizes-list li:first-child {margin-left:0;}
+.paperbag-sizes-item-image {
+    margin-bottom:20px;
+    width:239px;
+    border-right:1px solid #edecec;
+    height:197px;
+    float:left;
+}
+.paperbag-sizes-item-image-bg {
+    width:100%;
+    height:100%;
+}
+.paperbag-sizes-item-title {
+    font-size:14px;
+    font-weight:600;
+    height:52px;
+    line-height:52px;
+    border-bottom:1px solid #edecec;
+}
+.paperbag-sizes-item-sizes {
+    font-size:12px;
+    color:#aaaaaa;
+    margin-top:5px;
+    width:205px;
+    float:left;
+    text-align:left;
+    padding-left:35px;
+}
+
+.paperbag-sizes-item-sizes a {
+    background:url("../images/product_images/bags/download.png") no-repeat;
+    line-height:36px;
+    padding-left:40px;
+    font-size:14px;
+    color:#1abc9c;
+}
+
+.paperbag-sizes-bottle .paperbag-sizes-item-image-bg {background:url("../images/product_images/bags/sizes/bag-for-bottle.png") 80px 20px no-repeat;}
+.paperbag-sizes-gift .paperbag-sizes-item-image-bg {background:url("../images/product_images/bags/sizes/bag-for-gift.png") 80px 15px no-repeat;}
+.paperbag-sizes-quadro .paperbag-sizes-item-image-bg {background:url("../images/product_images/bags/sizes/bag-quadro.png") 60px 20px no-repeat;}
+.paperbag-sizes-rectangle .paperbag-sizes-item-image-bg {background:url("../images/product_images/bags/sizes/bag-rectangle.png") 50px 20px no-repeat;}
+
+#bottle-175x118x100 .paperbag-sizes-bottle .paperbag-sizes-item-image {background:url("../images/product_images/bags/sizes/bottle/175x118x100.png") 56px 27px no-repeat;}
+#bottle-183x120x62 .paperbag-sizes-bottle .paperbag-sizes-item-image {background:url("../images/product_images/bags/sizes/bottle/183x120x62.png") 56px 27px no-repeat;}
+#bottle-183x113x80 .paperbag-sizes-bottle .paperbag-sizes-item-image {background:url("../images/product_images/bags/sizes/bottle/183x113x80.png") 56px 27px no-repeat;}
+#bottle-250x167x67 .paperbag-sizes-bottle .paperbag-sizes-item-image {background:url("../images/product_images/bags/sizes/bottle/250x167x67.png") 56px 27px no-repeat;}
+
+#gift-300x200x100 .paperbag-sizes-gift .paperbag-sizes-item-image {background:url("../images/product_images/bags/sizes/gift/300x200x100.png") 58px 20px no-repeat;}
+#gift-350x250x80 .paperbag-sizes-gift .paperbag-sizes-item-image {background:url("../images/product_images/bags/sizes/gift/350x250x80.png") 58px 20px no-repeat;}
+#gift-360x230x100 .paperbag-sizes-gift .paperbag-sizes-item-image {background:url("../images/product_images/bags/sizes/gift/360x230x100.png") 58px 20px no-repeat;}
+#gift-390x250x85 .paperbag-sizes-gift .paperbag-sizes-item-image {background:url("../images/product_images/bags/sizes/gift/390x250x85.png") 58px 20px no-repeat;}
+
+#quadro-300x300x180 .paperbag-sizes-quadro .paperbag-sizes-item-image {background:url("../images/product_images/bags/sizes/quadro/300x300x180.png") 35px 26px no-repeat;}
+#quadro-450x350x120 .paperbag-sizes-quadro .paperbag-sizes-item-image {background:url("../images/product_images/bags/sizes/quadro/450x350x120.png") 35px 26px no-repeat;}
+
+#rectangle-350x450x120 .paperbag-sizes-rectangle .paperbag-sizes-item-image {background:url("../images/product_images/bags/sizes/rectangle/350x450x120.png") 25px 26px no-repeat;}
+#rectangle-270x340x70 .paperbag-sizes-rectangle .paperbag-sizes-item-image {background:url("../images/product_images/bags/sizes/rectangle/270x340x70.png") 25px 26px no-repeat;}
+#rectangle-250x350x80 .paperbag-sizes-rectangle .paperbag-sizes-item-image {background:url("../images/product_images/bags/sizes/rectangle/250x350x80.png") 25px 26px no-repeat;}
+
+.paperbag-sizes-bottle .paperbag-sizes-item-sizes {margin-top:25px;}
+.paperbag-sizes-gift .paperbag-sizes-item-sizes {margin-top:25px;}
+.paperbag-sizes-quadro .paperbag-sizes-item-sizes {margin-top:55px;}
+.paperbag-sizes-rectangle .paperbag-sizes-item-sizes {margin-top:25px;}
+
+
+/* Р­РєСЃРєР»СЋР·РёРІРЅС‹Рµ РїР°РєРµС‚С‹ */
+
+.pocket-exclusive_item-wrapper .static-price-block-image {
+    background-image:url("../images/product_images/exclusive_bags/exclusive-bag.png");
+}
+.pocket-exclusive_item-wrapper .static-price-block-content {
+    margin-top:0;
+}
+.pocket-exclusive_item-wrapper .static-price-block-image {
+    margin-top:20px;
+}
+.exclusivebag-ppo-wrapper {}
+.exclusivebag-ppo-title {
+    font-size:22px;
+    color:#1abc9c;
+    margin-bottom:30px;
+}
+.exclusivebag-ppo-list {
+    overflow:hidden;
+}
+.exclusivebag-ppo-list li {
+    float:left;
+    width:220px;
+    margin-left:42px;
+    text-align:center;
+}
+.exclusivebag-ppo-list li:first-child {margin-left:0;}
+.exclusivebag-ppo-item-image {
+    margin-bottom:20px;
+}
+.exclusivebag-ppo-item-title {
+    font-size:14px;
+}
+.exclusivebag-ppo-item-text {
+    font-size:12px;
+    color:#aaaaaa;
+    margin-top:5px;
+}
+
+/* РќР°РєР»РµР№РєРё */
+.serigraphy-stickers_item-wrapper .static-price-block-image {
+    background-image:url("../images/product_images/stickers/sticker.jpg");
+}
+.serigraphy-stickers_item-wrapper .static-price-block-content {
+    margin-top:0;
+}
+.serigraphy-stickers_item-wrapper .static-price-block-image {
+    margin-top:20px;
+}
+.stickers-ppo-wrapper {}
+.stickers-ppo-title {
+    font-size:22px;
+    color:#1abc9c;
+    margin-bottom:30px;
+}
+.stickers-ppo-list {
+    overflow:hidden;
+}
+.stickers-ppo-list li {
+    float:left;
+    width:220px;
+    margin-left:42px;
+    text-align:center;
+}
+.stickers-ppo-list li:first-child {margin-left:0;}
+.stickers-ppo-item-image {
+    margin-bottom:20px;
+}
+.stickers-ppo-item-title {
+    font-size:14px;
+}
+.stickers-ppo-item-text {
+    font-size:12px;
+    color:#aaaaaa;
+    margin-top:5px;
+}
+
+/* РћС‚РєСЂС‹С‚РєРё */
+.serigraphy-postcards_item-wrapper .static-price-block-image {
+    background-image:url("../images/product_images/postcards/postcard.jpg");
+}
+.serigraphy-postcards_item-wrapper .static-price-block-content {
+    margin-top:0;
+}
+.serigraphy-postcards_item-wrapper .static-price-block-image {
+    margin-top:80px;
+}
+.postcards-ppo-wrapper {}
+.postcards-ppo-title {
+    font-size:22px;
+    color:#1abc9c;
+    margin-bottom:30px;
+}
+.postcards-ppo-list {
+    overflow:hidden;
+}
+.postcards-ppo-list li {
+    float:left;
+    width:220px;
+    margin-left:170px;
+    text-align:center;
+    margin-bottom:20px;
+}
+.postcards-ppo-list li:first-child,
+.postcards-ppo-list li:nth-child(4n) {
+    margin-left:0;
+}
+.postcards-ppo-item-image {
+    margin-bottom:20px;
+}
+.postcards-ppo-item-image img {
+    height:125px;
+}
+.postcards-ppo-item-title {
+    font-size:14px;
+}
+.postcards-ppo-item-text {
+    font-size:12px;
+    color:#aaaaaa;
+    margin-top:5px;
+}
+
+/* РћС‚РєСЂС‹С‚РєРё */
+.serigraphy-labelsA_item-wrapper .static-price-block-image {
+    background-image:url("../images/product_images/labels/label_a.png");
+    background-position: 15px 50%;
+}
+.serigraphy-labelsB_item-wrapper .static-price-block-image {
+    background-image:url("../images/product_images/labels/label_b.png");
+    background-position: 10px 50%;
+}
+.serigraphy-labelsA_item-wrapper .static-price-block-content,
+.serigraphy-labelsB_item-wrapper .static-price-block-content {
+    margin-top:0;
+}
+.serigraphy-labelsA_item-wrapper .static-price-block-image,
+.serigraphy-labelsB_item-wrapper .static-price-block-image {
+    margin-top:15px;
+}
+
+/* РџР°РїРєРё РЅР° РґРёР·Р°Р№РЅРµСЂСЃРєРѕРј РєР°СЂС‚РѕРЅРµ */
+.serigraphy-cartoon_foldersC-title,
+.serigraphy-cartoon_folders_stamps-title {
+    color:#1abc9c;
+    font-size:22px;
+    margin-bottom:25px;
+}
+.static-price-block.serigraphy-cartoon_foldersC_item-wrapper {
+    margin-bottom:0;
+}
+
+.serigraphy-cartoon_foldersA_item-wrapper .static-price-block-image {
+    /* background-image:url("../images/product_images/cartoon_folders/cartoon_folder_a.jpg");*/
+}
+.serigraphy-cartoon_foldersB_item-wrapper .static-price-block-image {
+    background-image:url("../images/product_images/cartoon_folders/cartoon_folder_b.jpg");
+}
+.serigraphy-cartoon_foldersC_item-wrapper .static-price-block-image {
+    background-image:url("../images/product_images/cartoon_folders/cartoon_folder_c.jpg");
+}
+.serigraphy-cartoon_foldersA_item-wrapper .static-price-block-content,
+.serigraphy-cartoon_foldersB_item-wrapper .static-price-block-content {
+    margin-top:0;
+}
+.serigraphy-cartoon_foldersC_item-wrapper .static-price-block-content {
+    margin-top:20px;
+}
+.serigraphy-cartoon_foldersA_item-wrapper .static-price-block-image,
+.serigraphy-cartoon_foldersB_item-wrapper .static-price-block-image,
+.serigraphy-cartoon_foldersC_item-wrapper .static-price-block-image {
+    margin-top:15px;
+}
+
+
+
+
+.folder-stamps-list {
+    overflow:hidden;
+    margin-bottom:-35px;
+}
+.folder-stamps-list li {
+    float:left;
+    width:480px;
+    text-align:center;
+    border:1px solid #a3a3a3;
+    border-radius:5px;
+    height:250px;
+    margin-bottom:35px;
+    overflow:hidden;
+}
+.folder-stamps-list li:nth-child(2n){
+    margin-left:35px;
+}
+
+.folder-stamps-list li:first-child {margin-left:0;}
+.folder-stamps-item-image {
+    margin-bottom:20px;
+    width:239px;
+    border-right:1px solid #edecec;
+    height:197px;
+    float:left;
+}
+.folder-stamps-item-image-bg {
+    width:100%;
+    height:100%;
+}
+.folder-stamps-item-title {
+    font-size:14px;
+    font-weight:600;
+    height:52px;
+    line-height:52px;
+    border-bottom:1px solid #edecec;
+}
+.folder-stamps-item-types {
+    font-size:12px;
+    color:#aaaaaa;
+    margin-top:0;
+    width:240px;
+    float:left;
+    text-align:left;
+    overflow:hidden;
+}
+
+.folder-stamps-item-types a {
+    background:url("../images/product_images/bags/download.png") no-repeat;
+    /*line-height:36px;*/
+    padding-left:40px;
+    font-size:14px;
+    color:#1abc9c;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.folder-stamps-econom .folder-stamps-item-types span {
+    font-size:14px;
+    display:block;
+    padding-top:10px;
+    padding-bottom:5px;
+    line-height:40px;
+    color:#555555;
+}
+.folder-stamps-econom .folder-stamps-item-types div {
+    padding-left:25px;
+    padding-bottom:5px;
+    /*height:95px;*/
+}
+.folder-stamps-econom .folder-stamps-item-types-first {
+    border-bottom:1px solid #edecec;
+}
+.folder-stamps-standart .folder-stamps-item-types div {
+    width:119px;
+    float:left;
+}
+.folder-stamps-standart .folder-stamps-item-types-first {
+    height:195px;
+    border-right:1px solid #edecec;
+}
+.folder-stamps-standart .folder-stamps-item-types span {
+    font-size:14px;
+    display:block;
+    line-height:34px;
+    height:34px;
+    color:#555555;
+    border-bottom:1px solid #edecec;
+    text-align:center;
+    margin-bottom:15px;
+}
+.folder-stamps-standart .folder-stamps-item-types a {
+    background:url("../images/product_images/bags/download-small.png") 15px 7px no-repeat;
+    padding-left:45px;
+    line-height:30px;
+}
+.folder-stamps-econom .folder-stamps-item-image-bg {
+    /*	background: url("../images/product_images/cartoon_folders/stamps/econom.jpg") 50% 50% no-repeat; */
+}
+.folder-stamps-standart .folder-stamps-item-image-bg {
+    /* background: url("../images/product_images/cartoon_folders/stamps/standart.jpg") 50% 50% no-repeat; */
+}
+
+/* РІРёР·РёС‚РєРё */
+
+.serigraphy-serigraphy_cardsA_item-wrapper .static-price-block-image {
+    /* background-image:url("../images/product_images/serigraphy_cards/serigraphy_cards_a.png"); */
+}
+.serigraphy-serigraphy_cardsB_item-wrapper .static-price-block-image {
+    background-image:url("../images/product_images/serigraphy_cards/serigraphy_cards_b.png");
+}
+
+/* РєРѕРЅРІРµСЂС‚С‹ */
+
+.serigraphy-envelopesA_item-wrapper .static-price-block-image {
+    width: 225px;
+    /*background-image:url("../images/product_images/envelopes/envelopes_a.png");*/
+}
+.serigraphy-envelopesB_item-wrapper .static-price-block-image {
+    width: 225px;
+    /*background-image:url("../images/product_images/envelopes/envelopes_b.png");*/
+}
+.serigraphy-envelopesC_item-wrapper .static-price-block-image {
+    width: 225px;
+    /*background-image:url("../images/product_images/envelopes/envelopes_e.png");*/
+}
+.serigraphy-envelopesD_item-wrapper .static-price-block-image {
+    width: 225px;
+    /*background-image:url("../images/product_images/envelopes/envelopes_d.png");*/
+}
+.serigraphy-envelopesE_item-wrapper .static-price-block-image {
+    width: 225px;
+    /*background-image:url("../images/product_images/envelopes/envelopes_c.png");*/
+}
