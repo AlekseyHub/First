@@ -1,0 +1,1792 @@
+.delivery-section {
+    margin-bottom:35px;
+}
+.delivery-section-title {
+    font-size:22px;
+    line-height:22px;
+    margin-bottom:30px;
+    color:#1abc9c;
+}
+.delivery-section-undertable {
+    font-size:14px;
+    line-height:14px;
+    margin-bottom:12px;
+}
+.delivery-section-table {
+    border-radius:7px;
+    border:1px solid #a9a9a9;
+    width:1006px;
+    overflow: hidden;
+}
+.delivery-section-table-top {
+    height:36px;
+    overflow:hidden;
+    border-bottom:1px solid #a9a9a9;
+}
+.delivery-section-table-top div {
+    float:left;
+    font-size:14px;
+    line-height:36px;
+    padding-left:17px;
+}
+.delivery-section-table-top .delivery-section-table-top-order {
+    width:145px;
+    border-right:1px solid #eceaea;
+}
+.delivery-section-table-top .delivery-section-table-top-address {
+    width:525px;
+    border-right: 1px solid #eceaea;
+}
+.delivery-section-table-top .delivery-section-table-top-date {
+    width:123px;
+    padding-left:15px;
+}
+.delivery-section-table-top .delivery-section-table-top-cost {
+    padding-left:30px;
+    width:130px;
+    border-left:1px solid #eceaea;
+}
+
+.delivery-section-table-row {
+    clear:both;
+    font-size:14px;
+}
+.delivery-section-table-row-order {
+    float:left;
+    padding-left:17px;
+    width:145px;
+    border-right:1px solid #eceaea;
+    border-top:1px solid #eceaea;
+    height:47px;
+    padding-top:11px;
+    padding-bottom: 11px;
+    overflow: hidden;
+}
+.delivery-section-table-row-order a {
+    text-decoration:none;
+    background:url("../images/order/delivery/order-info.png") right 3px no-repeat;
+    padding-right:20px;
+    white-space: nowrap;
+    max-width:140px;
+    text-overflow: ellipsis;
+
+}
+.delivery-section-table-row-order a span {
+    /*border-bottom:1px dashed #a2a2a2; */
+    white-space: nowrap;
+    max-width:140px;
+    text-overflow: ellipsis;
+
+}
+.delivery-section-table-row-order-desc {
+    display:block;
+    font-size:12px;
+    color:#9d9d9d;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+.delivery-section-table-row-address {
+    float:left;
+    padding-left:17px;
+    width:514px;
+    height:52px;
+    border-top:1px solid #eceaea;
+}
+.delivery-section-table-row-date {
+    border-top:1px solid #eceaea;
+    float:left;
+    width:135px;
+    height:69px;
+    line-height:69px;
+    padding-left:15px;
+}
+.delivery-section-table-row-comment {
+    width:127px;
+    float:left;
+    padding-left:0px;
+    border-top:1px solid #eceaea;
+    line-height:69px;
+    height:69px;
+    font-size:14px;
+}
+
+.delivery-section-table-row-comment a {
+    line-height:69px;
+    height:69px;
+    padding-left:15px;
+    background:url("../images/calc-delivery-comment-status.png") left top no-repeat;
+    display:block;
+}
+.delivery-section-table-row-comment.has-comment a {
+    background:url("../images/calc-delivery-comment-status.png") left bottom no-repeat;
+}
+.delivery-section-table-row-comment.not-active a {
+    display:none;
+}
+.delivery-section-table-row-cost {
+    float:left;
+    padding-left:30px;
+    width:130px;
+    height:69px;
+    line-height:69px;
+    border-top:1px solid #eceaea;
+    border-left:1px solid #eceaea;
+}
+.delivery-section-table-row-cost .delivery-cost {
+    padding-left:8px;
+    color:#1abc9c;
+}
+.delivery-section-table-row-cost .delivery-cost-free {
+    padding-left:8px;
+    color:#e1e0e0;
+}
+
+.delivery-section-table-row:first-child .delivery-section-table-row-order,
+.delivery-section-table-row:first-child .delivery-section-table-row-address,
+.delivery-section-table-row:first-child .delivery-section-table-row-date,
+.delivery-section-table-row:first-child .delivery-section-table-row-cost {
+    border-top:0;
+}
+
+
+
+
+.delivery-section-table-total {
+    overflow:hidden;
+    clear:both;
+    height:34px;
+    border-top:1px solid #a9a9a9;
+}
+.delivery-section-table-total-title {
+    float:left;
+    width:846px;
+    height:34px;
+    line-height:34px;
+    font-size:14px;
+    text-align:right;
+}
+.delivery-section-table-total-sum {
+    float:left;
+    padding-left:30px;
+    width:130px;
+    height:34px;
+    line-height:30px;
+    font-size:16px;
+    font-weight:600;
+}
+.delivery-section-table-total-sum span {
+    font-weight:400;
+}
+
+
+
+
+
+
+.delivery-address-selector {
+    width: 525px;
+    padding: 18px 0 18px;
+    font-size: 14px;
+    border-right: 1px solid #eceaea;
+}
+
+.delivery-address-selector-selected {
+    padding-left:10px;
+    height: 34px;
+    line-height: 34px;
+    cursor: pointer;
+    margin: 0 20px 0 0;
+    border: 1px solid #9e9e9e;
+    border-radius:7px;
+    width: 290px;
+    z-index: 14;
+    position:relative;
+}
+.delivery-address-selector-selected-name {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow:hidden;
+    width:255px;
+}
+.delivery-address-selector-selected.active {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: 0 8px 16px -3px #838383;
+    z-index:16;
+}
+.delivery-address-selector-selected .btn {
+    background: url("../images/select-arrow.png") no-repeat left bottom;
+    height: 9px;
+    overflow: hidden;
+    position: absolute;
+    right: 9px;
+    top: 14px;
+    width: 14px;
+
+}
+.delivery-address-selector-selected span.address-selected {
+    padding: 2px 0 0 2px;
+    display: block;
+}
+.delivery-address-selector-selected-name span {
+    color:#9d9d9d;
+}
+.delivery-address-selector-selected.active .btn {
+    background-position:left top;
+}
+.delivery-address-selector ul {
+    box-shadow: 0 8px 16px -3px #838383;
+    margin-top: 0;
+    z-index: 20;
+    background: #ffffff;
+    position: absolute;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    width: 300px;
+    padding: 0;
+    border: 1px solid #9e9e9e;
+    border-top: 0;
+    display: none;
+    overflow:hidden;
+    max-height:180px;
+}
+.delivery-address-selector ul li {
+    padding: 0 9px;
+    list-style-type: none;
+    border-top: 1px solid #ececed;
+    height:35px;
+    line-height:35px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow:hidden;
+}
+.delivery-address-selector ul li span {
+    color:#9d9d9d;
+}
+
+.delivery-address-selector ul li:first-child {
+    border-top:0;
+}
+.delivery-address-selector ul li:hover {
+    cursor: pointer;
+    background: #77fce2;
+}
+.delivery-address-selector ul li.delivery-address-selector-add,
+.delivery-address-selector ul li a {
+    color:#19b294;
+}
+.delivery-address-selector ul li.delivery-address-selector-add:hover {
+    cursor: default;
+    background: #ffffff;
+}
+.address-selector-overlay {
+    background: none repeat scroll 0 0 transparent;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    visibility: hidden;
+    width: 100%;
+    z-index: 15;
+}
+.address-selector-overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+.delivery-section-table-row-date-pickup {
+    display:block;
+    padding-left:11px;
+}
+.delivery-section-table-row-date-calendar {
+    display:none;
+    border-radius:7px;
+    border: 1px solid #9e9e9e;
+    height: 34px;
+    line-height: 34px;
+    padding-left:10px;
+    width:150px;
+    margin-top:18px;
+    background:transparent url("../images/order/delivery/calendar.png") 100px 6px no-repeat;
+}
+.delivery-section-table-row-date-calendar.active {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.delivery-section-table-row-date-calendar input {
+    border:0;
+    height:34px;
+    line-height: 34px;
+    font-size:14px;
+    width:137px;
+    outline: 0;
+    cursor:pointer;
+    background: url("../images/order/delivery/calendar-input-arrow.png") no-repeat right top;
+}
+.delivery-section-table-row-date-calendar.active input {
+    background-position: right bottom;
+}
+.delivery-section-table-row-date-calendar input::-ms-clear {
+    display: none;
+}
+
+
+
+
+.choose-type-delivery {
+    margin-top:10px;
+    overflow:hidden;
+    margin-bottom:30px;
+}
+.choose-type-delivery li {
+    float:left;
+    width:600px;
+}
+.choose-type-delivery li:first-child {
+    width:310px;
+}
+.choose-type-delivery li label {
+    padding-left:10px;
+    font-size:18px;
+}
+.choose-delivery-place {
+    background: url("../images/order/delivery/truck.png") 675px 60px no-repeat;
+}
+.choose-delivery-place label,
+.your-order label {
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:14px;
+    display:block;
+}
+.choose-delivery-place-address {
+
+}
+.choose-delivery-place-address-select {
+    width:400px;
+    float:left;
+    margin-right:21px;
+}
+.choose-delivery-place-address-select select {
+    width:396px;
+}
+.choose-delivery-place-address-add {
+    width:180px;
+    float:left;
+}
+.choose-delivery-place-address-add a.wgreen-btn {
+    width:168px;
+    padding-left:0;
+    padding-right:0;
+}
+.choose-delivery-place-address-add {
+
+}
+.choose-delivery-place-date {
+    padding-top:40px;
+    clear:both;
+}
+.choose-delivery-place-date-input {
+    width:160px;
+    height:33px;
+    border:1px solid #9c9c9c;
+    border-radius:7px;
+    background:#ececed;
+    overflow:hidden;
+}
+.choose-delivery-place-date-input.active {
+    border-bottom-left-radius:0;
+    border-bottom-right-radius:0;
+}
+.choose-delivery-place-date-input-calendar {
+    background:url("../images/order/delivery/calendar.png") 110px 5px no-repeat;
+    font-size:14px;
+    height:33px;
+    line-height:33px;
+    width:135px;
+    float:left;
+
+}
+.choose-delivery-place-date-input-calendar span {
+    padding-left:15px;
+    width:85px;
+    background:#ffffff;
+    border-right:1px solid #c2c2c2;
+    display:block;
+    height:33px;
+    line-height:33px;
+    overflow:hidden;
+}
+.choose-delivery-place-date-input-calendar input {
+    background:#ffffff;
+    border:0;
+    width:90px;
+}
+
+.active .choose-delivery-place-date-input-calendar input {
+    background:#ececed;
+}
+.active .choose-delivery-place-date-input-calendar span {
+    background:#ececed;
+    border-right:1px solid #ececed;
+}
+.choose-delivery-place-date-input-arrow {
+    background: url("../images/select-arrow.png") left bottom no-repeat;
+    height:8px;
+    float:left;
+    width:13px;
+    margin-left:5px;
+    margin-top:12px;
+
+}
+.active .choose-delivery-place-date-input-arrow {
+    background-position:left top;
+}
+
+.choose-delivery-place-comment {
+    margin-top:40px;
+}
+
+.choose-delivery-place-comment textarea {
+    width:570px;
+    border:1px solid #a3a3a3;
+    border-radius:7px;
+    height:50px;
+    padding:10px 15px;
+    resize:none;
+    font-size:14px;
+    margin:2px;
+}
+.choose-delivery-place-comment textarea:focus {
+    border:3px solid #77fce2;
+    margin:0;
+    outline: none;
+}
+.width-400 {
+    width:396px;
+}
+
+
+.your-order {
+    margin-top:40px;
+}
+.your-order-table {
+    border:1px solid #a9a9a9;
+    border-radius:7px;
+    overflow:hidden;
+}
+.your-order-table li {
+    overflow:hidden;
+    border-top:1px solid #e5e4e4;
+}
+.your-order-table li:first-child {
+    border-top:0;
+}
+.your-order-table li div {
+    float:left;
+    line-height:53px;
+    font-size:14px;
+    height:53px;
+}
+.your-order-table-row-num {
+    width:30px;
+    padding-left:10px;
+
+}
+.your-order-table-row-name {
+    width:340px;
+
+}
+.your-order-table-row-desc {
+    width:500px;
+
+}
+.your-order-table li .your-order-table-row-price {
+    width:100px;
+    padding-right:26px;
+    text-align:right;
+    font-size:18px;
+}
+.your-order-table-row-price span {
+    font-family: "als_rublregular";
+}
+.your-order-table-row-sumtitle {
+    width:870px;
+    padding-left:10px;
+    font-weight:600;
+
+}
+.your-order-table li.item-delivery {
+    color:#19bc9c;
+}
+
+.delivery-attention {
+    font-size:14px;
+    padding-left:35px;
+    clear:both;
+    margin-top:15px;
+    margin-bottom:20px;
+    background:url("../images/info.png") no-repeat;
+}
+.delivery-attention span {
+    font-weight:600;
+}
+
+.delivery-step-controls {
+    overflow:hidden;
+}
+.delivery-step-controls .back-btn {
+    font-size:14px;
+    float:right;
+    font-weight:400;
+    width: 66px;
+}
+.delivery-step-controls .next-btn {
+    width: 74px;
+    font-size:14px;
+    float:right;
+    margin-left:27px;
+    font-weight:400;
+}
+
+.select_date_calendar {
+    text-decoration: none;
+    display: inline-block;
+    background: url("/images/calendar/calendar-ico.png") 0 0 no-repeat;
+    padding-left: 27px;
+    color: #aaaaaa;
+    font-size: 13px;
+    position: relative;
+    /*margin-left: 20px;*/
+}
+.select_date_calendar:hover {
+    background-position: 0 -16px;
+}
+/* Calendar */
+input.order_delivery_date {
+    z-index: 100;
+    width: 0;
+    border-width: 0;
+    height: 0;
+    position: relative;
+}
+.popup-basic-window input.order_delivery_date {
+    z-index: 10000;
+}
+.select_date_wrapper {
+    display: inline-block;
+    line-height: 16px;
+    height: 16px;
+}
+
+.ui-datepicker {
+    width:260px;/*
+	border:1px solid #9c9c9c;
+	border-top-right-radius:7px;
+	border-bottom-left-radius:7px;
+	border-bottom-right-radius:7px;*/
+    border-radius:4px;
+    background:#ffffff;
+    padding:0;
+
+}
+.ui-datepicker-header {
+    height:36px;
+    line-height:36px;
+    padding:0;
+    /*border-bottom:1px solid #9c9c9c;*/
+    background: #1abc9c;
+    font-size:14px;
+    font-weight:400;
+    border-top-left-radius:4px;
+    border-top-right-radius:4px;
+    overflow: hidden;
+}
+.ui-datepicker-month {
+    color: #ffffff;
+}
+.ui-datepicker-year {
+    /*display:none;*/
+    color: #86fae3;
+}
+
+.ui-datepicker-prev {
+    background:url("../images/calendar/prev.png") center center no-repeat;
+}
+.ui-datepicker-next {
+    background:url("../images/calendar/next.png") center center no-repeat;
+}
+.ui-datepicker-prev.ui-state-disabled,
+.ui-datepicker-next.ui-state-disabled {
+    display: none;
+}
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+    position: absolute;
+    top: 12px;
+    width: 9px;
+    height: 15px;
+}
+.ui-datepicker .ui-datepicker-prev {
+    left: 16px;
+    cursor: pointer;
+}
+.ui-datepicker .ui-datepicker-next {
+    right: 16px;
+    cursor: pointer;
+}
+
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -8px;
+    top: 50%;
+    margin-top: -8px;
+}
+.ui-datepicker th {
+    font-weight: 400;
+    color: #1abc9c;
+}
+.ui-datepicker .ui-datepicker-week-end {
+    color: #ea6060;
+}
+.ui-datepicker td a.ui-state-default {
+    color: #555555;
+}
+.ui-datepicker td a.ui-state-active {
+    color:#ffffff;
+    background:#1abc9c;
+    border-radius: 15px;
+
+}
+.ui-datepicker td a.ui-state-hover {
+    border-radius: 15px;
+    border: 1px solid #1abc9c;
+    height:28px;
+    line-height:28px;
+    width: 28px;
+
+}
+
+.ui-state-disabled {
+    color: #d7d7d7;
+}
+#ui-datepicker-div {
+    box-shadow: 			 -1px 11px 16px -1px rgba(0,0,0,0.3);
+    -moz-box-shadow: 		 -1px 11px 16px -1px rgba(0,0,0,0.3);
+    -webkit-box-shadow:	 	 -1px 11px 16px -1px rgba(0,0,0,0.3);
+}
+
+.parashastyle0 {
+    display: block;
+    width: 454px;
+    float: left;
+}
+
+
+.parashastyle{
+    border: 2px solid #1abc9c;
+    background: transparent;
+    border-radius: 4px;
+    padding: 5px 15px 6px 15px;
+    height: 76px;
+    line-height: 33px;
+    color: #1abc9c;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.parashastyle0 a {
+    text-decoration:none;
+    font-size: 13px;
+}
+
+
+
+/**
+	STEP 2. DELIVERY - version from 18/04/2016
+**/
+form.deliveryrowlistelement {
+    /*margin-bottom: 18px;*/
+    display: block;
+}
+.step2-item {
+    padding: 36px;
+    /*background: url("../images/step2/item-border.png") bottom left repeat-x;*/
+    /*overflow: hidden;*/
+    position: relative;
+    border: 1px solid #9c9c9c;
+    border-radius: 7px;
+    margin-bottom: 18px;
+}
+#new_step2 .step2-item {
+    padding: 0;
+}
+#new_step2 .step2-item-top {
+    padding: 20px;
+    border-bottom: 1px solid #e1e0e0;
+    overflow: hidden;
+    position: relative;
+}
+
+.step2-item-image {
+    float: left;
+    margin-right: 23px;
+    width: 91px;
+    height: 91px;
+    border-radius:6px;
+    overflow:hidden;
+    background: #ececed url("../images/step2/uploaded-image-area-small.png") center center no-repeat;
+
+}
+#new_step2 .step2-item-image {
+    background: #ececed url("../images/step2/uploaded-image-area-small2.png") center center no-repeat;
+    margin-right: 20px;
+    width: 74px;
+    height: 74px;
+}
+.step2-item-preview {
+    display: none;
+    position:absolute;
+    left:100px;
+    z-index:1000;
+}
+.step2-item-delivery {
+    clear: both;
+    /*overflow: hidden;*/
+    margin-top: 36px;
+}
+#new_step2 .step2-item-delivery {
+    margin-top: 0;
+}
+
+.step2-item-text {
+    font-size:18px;
+    line-height: 36px;
+}
+.step2-item-text .title {
+    margin-top: 9px;
+}
+.step2-item-text .params {
+    color: #9d9d9d;
+}
+
+
+
+#new_step2 .step2-item-text {
+    font-size:16px;
+    line-height: 24px;
+}
+#new_step2 .step2-item-text .title {
+    margin-top: 0;
+}
+#new_step2 .step2-item-text .params {
+    color: #8d8d8d;
+    font-size: 14px;
+}
+.step2-item-basic_price {
+    display: none;
+}
+#new_step2 .step2-item-basic_price {
+    display: block;
+    font-size: 22px;
+    position: absolute;
+    margin-top: -30px;
+    padding-right: 20px;
+    right: 0;
+}
+
+.step2-item-delivery .city-title {
+    font-size: 18px;
+    height:40px;
+    /*line-height:40px;*/
+    padding-left: 112px;
+}
+#new_step2 .step2-item-delivery .city-title {
+
+}
+
+.step2-item-delivery .city-title span {
+    line-height:16px;
+    padding-top:12px;
+    font-size: 18px;
+    display: inline-block;
+}
+.step2-item-delivery .city-title a {
+    color: #1abc9c;
+    text-decoration: none;
+    border-bottom: 1px dashed #1abc9c;
+    display: inline-block;
+}
+.step2-item-delivery .list {
+    /*overflow: hidden;*/
+    /*margin-bottom: 20px;*/
+    position: relative;
+}
+.step2-item-delivery .list li.item_type_delivery {
+    clear: both;
+    padding-top: 25px;
+}
+.step2-item-delivery .list li.item_type_delivery:first-child {
+    padding-top: 18px;
+}
+#choose-delivery-type2 .step2-item-delivery .list li.item_type_delivery:first-child {
+    padding-top: 5px;
+}
+#choose-delivery-type2 .step2-item-delivery .comment-area  {
+    border-bottom: 1px solid #e1e0e0;
+}
+.step2-item-delivery .list li.item_type_delivery .radio {
+    padding-top: 9px;
+    float: left;
+    width: 35px;
+}
+#new_step2 .step2-item-delivery .list li.item_type_delivery .radio {
+    padding-top: 9px;
+    float: left;
+    width: 20px;
+    padding-left: 17px;
+}
+
+.step2-item-delivery .list li .text {
+    padding-top: 12px;
+    padding-left: 33px;
+    float: left;
+    width: 800px;
+    font-size: 14px;
+}
+#new_step2 .step2-item-delivery .list li .text {
+    padding-top: 12px;
+    padding-left: 0;
+    float: left;
+    width: 870px;
+    font-size: 14px;
+}
+#new_step2.popup .step2-item-delivery .list li .text {
+    width: 740px;
+}
+.step2-item-delivery .list li .delivery-ico {
+    float: left;
+    width: 45px;
+    height: 35px;
+    margin-top: 6px;
+}
+#new_step2 .step2-item-delivery .list li .delivery-ico {
+    float: left;
+    width: 45px;
+    height: 35px;
+    margin-top: 0px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.step2-item-delivery .list li.active.item_type_delivery {
+    color: #555555;
+}
+.step2-item-delivery .list li.active.item_type_delivery li {
+    color: #555555;
+}
+
+
+#new_step2 .step2-item-delivery .list li .delivery-bag-ico {
+    background: url("/images/step2/delivery_icons.png") -45px 0 no-repeat;
+}
+#new_step2 .step2-item-delivery .list li .delivery-bag-msk-ico {
+    background: url("/images/step2/delivery_icons.png") -90px 0 no-repeat;
+}
+#new_step2 .step2-item-delivery .list li .delivery-auto-ico {
+    background: url("/images/step2/delivery_icons.png") 0 0 no-repeat;
+    margin-top: 3px;
+}
+.step2-item-delivery .list li.active .delivery-bag-ico { background-position: -45px -35px;}
+.step2-item-delivery .list li.active .delivery-bag-msk-ico { background-position: -90px -35px;}
+.step2-item-delivery .list li.active .delivery-auto-ico { background-position: 0 -35px;}
+
+#new_step2.delivery-section .step2-item-delivery .list li .delivery-ico {
+    margin-top:4px;
+}
+#new_step2.delivery-section .step2-item-delivery .list li .delivery-auto-ico {
+    margin-top: 6px;
+}
+.step2-item-delivery .list li .text .pickup-address-list {
+    margin-top: 36px;
+}
+.step2-item-delivery .list li .text .pickup-address-list li {
+    margin-top: 12px;
+    display: block;
+    clear: both;
+    overflow: hidden;
+}
+.step2-item-delivery .list li .text .pickup-address-list li label {
+    padding-left: 10px;
+    font-size: 14px;
+    /*color: #9d9d9d;*/
+}
+.step2-item-delivery .list li .text .title {
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+.step2-item-delivery .list li.active .text .title {
+    font-weight: 600;
+}
+#new_step2 .step2-item-delivery .list li .text .title a {
+    display: none;
+}
+.step2-item-delivery .list li .text .title span {
+    color: #aaaaaa;
+}
+.step2-item-delivery .list li .text .title a {
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+    color: #aaaaaa;
+    border-bottom: 1px dashed #aaaaaa;
+    display: inline-block;
+}
+.step2-item-delivery .list li.active .text .title a {
+    color: #18b798;
+    border-bottom: 1px dashed #18b798;
+}
+
+.step2-item-delivery .list li .text .date-and-price {
+    /*overflow: hidden;*/
+    /*
+    line-height: 15px;
+    height: 15px;
+    */
+}
+.step2-item-delivery .list li .text .date-and-price span.date,
+.step2-item-delivery .list li .text .date-and-price span.separator,
+.step2-item-delivery .list li .text .date-and-price span.price {
+    line-height: 16px;
+    height: 16px;
+    display: inline-block;
+    /*float: left;*/
+}
+.step2-item-delivery .list li .text .date-and-price .in-detail {
+    color: #aaaaaa;
+}
+
+.step2-item-delivery .list li .text .date-and-price b {
+    /*font-size:18px;*/
+}
+#new_step2 .step2-item-delivery .list li .text .date-and-price b {
+    font-size:14px;
+    font-weight: 700;
+}
+
+.step2-item-delivery .list li .text .date-and-price .separator {
+    padding: 0;
+    margin: 0 7px;/*
+	font-weight: 400;
+	color: #b5b5b5;*/
+    height: 16px;
+    line-height: 16px;
+    /*border-left: 1px solid #b5b5b5;*/
+    /*width: 0px;*/
+    display: inline-block;
+    color: #aaaaaa;
+    font-weight: 600
+}
+#new_step2 .step2-item-delivery .list li .text .date-and-price .separator {
+    margin: 0 7px;/*
+	font-weight: 400;
+	color: #b5b5b5;*/
+    height: 16px;
+    line-height: 16px;
+    /*border-left: 1px solid #b5b5b5;*/
+    /*width: 0px;*/
+    display: inline-block;
+    color: #aaaaaa;
+    font-weight: 600;
+}
+
+.step2-item-delivery .add-comment {
+    color: #1abc9c;
+    font-size: 14px;
+    text-align: right;
+    line-height:16px;
+    margin-top: 18px;
+}
+.step2-item-delivery .add-comment a {
+    color: #1abc9c;
+    text-decoration: none;
+    border-bottom: 1px dashed #1abc9c;
+    display: inline-block;
+}
+.step2-item-delivery .address-delivery {
+    /*padding-top: 30px;*/
+}
+.step2-item-delivery .address-delivery .in-kad {
+    margin-bottom: 12px;
+}
+.step2-item-delivery .address-delivery .in-kad.jq-radio {
+    margin-bottom: 0px;
+}
+
+.step2-item-delivery .address-delivery .in-kad li,
+.step2-item-delivery .address-delivery .out-kad li {
+    overflow: auto;
+}
+.step2-item-delivery .address-delivery label,
+.step2-item-delivery .address-region-delivery label {
+    padding-left:9px;
+    position: relative;
+    padding-right: 38px;
+    line-height: 28px;
+}
+.step2-item-delivery .address-delivery label .description,
+.step2-item-delivery .address-region-delivery label .description {
+    color: #9d9d9d;
+    padding-left: 10px;
+}
+.step2-item-delivery .address-delivery label:hover,
+.step2-item-delivery .address-region-delivery label:hover {
+
+}
+.step2-item-delivery .address-delivery label .separator-wrapper,
+.step2-item-delivery .address-region-delivery label .separator-wrapper {
+    height: 16px;
+    line-height: 16px;
+    position: relative;
+    display: inline-block;
+}
+.step2-item-delivery .address-delivery label .separator,
+.step2-item-delivery .address-region-delivery label .separator {
+    height: 16px;
+    line-height: 16px;
+    margin: 0 7px;
+    color: #aaaaaa;
+    display: inline-block;
+    font-weight: 600;
+}
+.step2-item-delivery .address-delivery label .separator,
+.step2-item-delivery .address-region-delivery label .separator {
+
+
+}
+.step2-item-delivery .address-delivery label,
+.step2-item-delivery .address-region-delivery label {
+    /*float: left;
+    clear: both;*/
+}/*
+.step2-item-delivery .address-delivery label span.address,
+.step2-item-delivery .address-region-delivery label span.address,
+.step2-item-delivery .address-delivery label span.separator,
+.step2-item-delivery .address-region-delivery label span.separator,
+.step2-item-delivery .address-delivery label span.person-data,
+.step2-item-delivery .address-region-delivery label span.person-data {
+	display: inline-block;
+	height: 16px;
+	line-height: 16px;
+	float:left;
+}*/
+.step2-item-delivery .address-delivery li:hover label .address,
+.step2-item-delivery .address-region-delivery li:hover label .address {
+    color: #010101;
+}
+.step2-item-delivery .address-delivery li:hover label .person-data,
+.step2-item-delivery .address-region-delivery li:hover label .person-data {
+    color: #010101;
+}
+.step2-item-delivery .address-delivery label .edit-address,
+.step2-item-delivery .address-region-delivery label .edit-address {
+    display: none;
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    background: #f1f1f1 url("/images/step2/edit.png") left top no-repeat;
+    border-radius: 4px;
+    cursor: pointer;
+    right:0;
+}
+.step2-item-delivery .address-delivery li:hover label .edit-address,
+.step2-item-delivery .address-region-delivery li:hover label .edit-address {
+    display: inline-block;
+}
+.step2-item-delivery .address-delivery label .edit-address:hover,
+.step2-item-delivery .address-region-delivery label .edit-address:hover {
+    background-position: left bottom;
+}
+.in-kad-list, .out-kad-list {
+    color: #9d9d9d;
+    font-size: 14px;
+    padding-left: 0;
+    margin-top: 18px;
+}
+.step2-item-delivery .list li .in-kad-list li,
+.step2-item-delivery .list li .out-kad-list li {
+    margin-top: 8px;
+}
+.step2-item-delivery .list li .in-kad-list li:last-child,
+.step2-item-delivery .list li .out-kad-list li:last-child {
+    padding-bottom: 20px;
+}
+
+.step2-total {
+    padding-top: 18px;
+    padding-bottom: 28px;
+    overflow: hidden;
+    /*background: url("../images/step2/item-border.png") bottom left repeat-x;*/
+}
+.step2-total-sum {
+    font-size: 22px;
+    font-weight: 400;
+}
+.step2-total-title {
+    float: right;
+    width: 500px;
+    text-align: right;
+    font-size: 16px;
+    line-height: 24px;
+}
+.step2-controls {
+    margin-top: 24px;
+    overflow: hidden;
+}
+
+.step2-controls a.back-btn,
+.step2-controls a.forward-btn {
+    float: right;
+    margin-left: 20px;
+    padding: 0 30px;
+}
+.pickup-address-list,
+.address-delivery-wrapper,
+.address-delivery,/*
+.address-delivery .in-kad,
+.address-delivery .out-kad,*/
+.address-delivery .in-kad-list,
+.address-delivery .out-kad-list,
+.address-region-delivery {
+    display:none;
+}
+.address-delivery .in-kad-list li.last {
+    padding-bottom:20px;
+
+}
+.active .pickup-address-list,
+.active .address-delivery-wrapper,
+.active .address-delivery,/*
+.address-delivery .in-kad,
+.address-delivery .out-kad,
+.address-delivery .in-kad-list,
+.address-delivery .out-kad-list,*/
+.active .address-region-delivery {
+    display:block;
+}
+
+.change_city_for_calc {
+    display: none;
+    background: #ffffff;
+    border-radius: 7px;
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 34px;
+    height: 34px;
+    color: #555555;
+    border: 1px solid #a9a9a9;
+    margin: 2px;
+    width: 270px;
+}
+.change_city_for_calc:focus {
+    border: 3px solid #77fce2;
+    margin: 0;
+    outline: none;
+}
+.step2-item-delivery .list li .address-region-delivery {
+    color: #9d9d9d;
+    font-size: 14px;
+    margin-top: 36px;
+}
+#new_step2 .step2-item-delivery .list li .address-region-delivery {
+    margin-top: 18px;
+}
+
+.step2-item-delivery .list li .address-region-delivery label {
+    padding-left:9px;
+}
+.step2-item-delivery .list li .address-region-delivery li {
+    margin-top:12px;
+}
+.step2-item-delivery li.last .see-all-addresses {
+    color: #aaaaaa;
+    display: inline-block;
+    margin-right: 45px;
+}
+.step2-item-delivery li.last .see-all-addresses a {
+    color: #aaaaaa;
+    text-decoration: none;
+    border-bottom: 1px dashed #aaaaaa;
+    display: inline-block;
+}
+.step2-item-delivery li.last .add-new-address {
+    color: #1abc9c;
+}
+.step2-item-delivery li.last .add-new-address a {
+    color: #1abc9c;
+}
+
+.step2-item-delivery li.last .add-new-address a.add-address-region-way-link,
+.step2-item-delivery li.last .add-new-address a.add-address-city-way-link {
+    color: #1abc9c;
+    text-decoration: none;
+    display: inline-block;
+}
+.step2-item-delivery li.last .add-new-address a.add-address-region-way-link span,
+.step2-item-delivery li.last .add-new-address a.add-address-city-way-link span{
+    border-bottom: 1px dashed #1abc9c;
+    display: inline-block;
+}
+.step2-item-delivery li.hided {
+    display:none;
+}
+
+
+.basket-delivery-error-title {
+    background: url("../images/info.bad.png") no-repeat;
+    padding-left:25px;
+    color: #ff0000;
+    margin-top: 15px;
+    display: none;
+}
+.delivery-step-controls .basket-delivery-error-title {
+    margin-right: 40px;
+    float: right;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.step2-item-delivery .gvn-add-region-address-form {
+    padding-top: 20px;
+}
+
+
+
+
+/**/
+
+#new_step2 .stock-info {
+
+}
+#new_step2 .stock-info .shedule {
+    line-height: 18px;
+    overflow: hidden;
+}
+#new_step2 .stock-info .shedule .day {
+    display: inline-block;
+    float: left;
+    clear: both;
+    width: 53px;
+}
+#new_step2 .stock-info .shedule .time {
+    display: inline-block;
+    float: left;
+    width: 150px;
+}
+#new_step2 .pickup-address-list .map_link,
+#new_step2 .stock-info .map_link {
+    padding-top: 20px;
+}
+#new_step2 .pickup-address-list .map,
+#new_step2 .stock-info .map {
+    border-radius: 7px;
+    /*height: 290px;*/
+    overflow: hidden;
+    width: 870px;
+    margin-top: 20px;
+    display: none;
+}
+#new_step2 .pickup-address-list .map_link a,
+#new_step2 .stock-info .map_link a {
+    color: #19b294;
+    text-decoration: none;
+    padding-right: 15px;
+    display: inline-block;
+    line-height: 22px;
+    background: url(/images/step2/green-vertical-arrow.png) right top no-repeat;
+}
+#new_step2 .pickup-address-list .map_link a.active,
+#new_step2 .stock-info .map_link a.active {
+    background-position: right bottom;
+}
+#new_step2 .pickup-address-list .map_link a span,
+#new_step2 .stock-info .map_link a span {
+    border-bottom: 1px dotted #19b294;
+    display: inline-block;
+    height: 1em;
+    line-height: 1.05em;
+}
+
+#new_step2 .comment-area {
+    border-top: 1px solid #e1e0e0;
+    padding: 18px 0 18px 20px;
+    font-size: 14px;
+}
+#new_step2 .comment-area .comment-wrap {
+    padding-bottom: 20px;
+    display: none;
+    color: black;
+    width: 501px;
+}
+
+#new_step2 .comment-area .comment-wrap  span{
+    padding-bottom: 20px;
+    color: #a1a1a1;
+}
+
+#new_step2 .comment-area textarea {
+    border: 1px solid #9c9c9c;
+    border-radius: 7px;
+    width: 481px;
+    height: 77px;
+    padding: 9px;
+    display: block;
+    margin-top: 10px;
+    resize: none;
+}
+#new_step2 .comment-area textarea:focus {
+    border:3px solid #77fce2;
+    margin: 8px 0 0;
+    outline: none;
+}
+#new_step2 .comment-area a {
+    color: #19b294;
+    text-decoration: none;
+    padding-right: 15px;
+    display: inline-block;
+    line-height: 22px;
+    background: url(/images/step2/green-vertical-arrow.png) right top no-repeat;
+}
+#new_step2 .comment-area a.active {
+    background-position: right bottom;
+}
+#new_step2 .comment-area a span {
+    border-bottom: 1px dotted #19b294;
+    display: inline-block;/*
+	height: 1em;
+	line-height: 1.05em;*/
+    height: 1em;
+    line-height: 1.05em;
+}
+
+
+
+#new_step2 .add_new_address label a {
+    color: #19b294;
+    text-decoration: none;
+    padding-right: 15px;
+    display: inline-block;
+    line-height: 22px;
+    background: url(/images/step2/green-vertical-arrow.png) right top no-repeat;
+}
+#new_step2 .add_new_address a span {
+    border-bottom: 1px dotted #19b294;
+    display: inline-block;/*
+	height: 1em;
+	line-height: 1.05em;*/
+    height: 1em;
+    line-height: 1.05em;
+}
+#new_step2 .add_new_address a.active {
+    background-position: right bottom;
+}
+
+
+
+
+#new_step2 .new-address-form .popup-basic-window {
+    margin: 0;
+    background: none;
+}
+#new_step2 .new-address-form h1 {
+    display: none;
+}
+#new_step2 .new-address-form .popup-basic-content {
+    padding: 0;
+    margin: 0;
+}
+#new_step2 .new-address-form .label_address {
+    display: none;
+}
+#new_step2 .new-address-form .gvn-add-region-address-form .person,
+#new_step2 .new-address-form .gvn-add-region-address-form .phone,
+#new_step2 .new-address-form .gvn-add-region-address-form .email {
+    /*margin-top: 20px;*/
+    margin-top: 0;
+    width: 212px;
+}
+#new_step2 .new-address-form .gvn-add-region-address-form .add-street-wrapper {
+    width: 470px;
+    margin-bottom: 20px;
+}
+
+#new_step2 .new-address-form .gvn-add-region-address-form .place .street input {
+    /*min-width: 258px;*/
+}
+
+#new_step2 .new-address-form .gvn-add-region-address-form .label {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 7px;
+}
+#new_step2 .new-address-form .account-details-delivery-new-address-comment {
+    clear: both;
+    padding-top:10px;
+    width: 464px;
+}
+#new_step2 .new-address-form .account-details-delivery-new-address-comment textarea {
+    width: 434px;
+}
+
+#new_step2 .new-address-form .account-details-delivery-new-address-comment-title {
+    font-weight: 400;
+    margin-top: 0;
+}
+#new_step2 .new-address-form .account-details-delivery-new-address .infobox-wrapper {
+    /*display: none;*/
+}
+#new_step2 .new-address-form .account-details-delivery-new-address-controls {
+    margin-top: 15px;
+}
+#new_step2 .new-address-form .account-details-delivery-new-address-controls a {
+    float: left;
+    margin-left: 0;
+    margin-right: 20px;
+}
+#new_step2 .new-address-form .account-details-delivery-new-address-controls a.cancel-btn {
+    display: none;
+}
+.new-address-form {
+    /*padding-left: 25px;*/
+    display: none;
+}
+
+.step2-item-delivery .new_edit_address_form .gvn-add-region-address-form {
+    padding-top: 0;
+}
+#new_step2 .step2-item-delivery .new_edit_address_form .gvn-add-region-address-form {
+    padding-top: 20px;
+}
+.step2-item-delivery .new-address-form .gvn-add-region-address-form .extracontrol {
+    padding-top:20px;
+}
+.step2-item-delivery .new-address-form .gvn-add-region-address-extrawrapper {
+    margin-top: 20px;
+}
+.step2-item-delivery .new-address-form .gvn-add-region-address-extrawrapper .office {
+    margin-right: 90px;
+}
+
+.step2-item-delivery .new-address-form .gvn-add-region-address-extrawrapper .dinnertime {
+    margin-left: 30px;
+    float: left;
+}
+#new_step2 .step2-item-delivery .new-address-form .gvn-add-region-address-extrawrapper .dinnertime {
+    float: right;
+    margin-left: 0px;
+}
+.step2-item-delivery .new-address-form .gvn-add-region-address-extrawrapper .extrainfo {
+    padding-top:20px;
+}
+#new_step2 .gvn-add-region-address-form .address_label {
+    display: none
+}
+#new_step2 .gvn-add-region-address-form  .place_edit {
+    display: none
+}
+.step2-item-delivery .new-address-form .gvn-add-region-address-extrawrapper .instructions {
+    float: left;
+    padding-top: 20px;
+    width: 337px;
+    margin-left: 50px;
+}
+
+
+.step2-toptitle {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.step2-topmenu {
+    margin-bottom: 20px;
+}
+.step2-topmenu ul {
+    overflow: hidden;
+}
+.step2-topmenu li {
+    float:left;
+    padding-right: 50px;
+    font-size: 14px;
+}
+.step2-topmenu li a {
+    color:#1abc9c;
+}
+.step2-topmenu li.active a {
+    text-decoration: none;
+    color: #555555;
+
+}
+
+.different-ready-time {
+    padding: 36px 0 0 20px;
+    position: relative;
+}
+.different-ready-time .title {
+    font-size:18px;
+    font-weight:600;
+    margin-bottom: 24px;;
+}
+.different-ready-time .field {
+    margin-bottom: 24px;
+}
+.different-ready-time .info {
+    font-size: 14px;
+    background: url("../images/info.png") left center no-repeat;
+    padding-left: 25px;
+    position: absolute;
+    left: 300px;
+    top: 38px;
+}
+
+#new_step2.popup .comment-area {
+    padding-left: 0;
+}
+#new_step2.popup .comment-area {
+    border-top: 0;
+    padding: 0 0 15px 0px;
+    margin-bottom: 20px;
+}
+.line-before-controls,
+#new_step2.popup .line-before-controls {
+    border-top: 1px solid #e1e0e0;
+    clear: both;
+    margin-top: 20px;
+    padding-top: 15px;
+}
+#new_step2.popup .delivery-step-controls .next-btn,
+#new_step2.popup .delivery-step-controls .back-btn {
+    float: left;
+    margin-left: 0;
+    margin-right: 20px;
+}
+#new_step2.popup .comment-area textarea {
+    width: 480px;
+}
+.pickup_attention {
+    right: 20px;
+    position: absolute;
+    width: 260px;
+    padding: 15px 25px 15px 45px;
+    line-height: 18px;
+    border-radius: 6px;
+    border: 1px solid #e1e0e0;
+    /*margin-top: -65px;*/
+    top: 20px;
+    background:url(/images/info.png) 20px 17px no-repeat;
+}
+#new_step2 li .stock-info {
+    display: none;
+}
+#new_step2 li.active .stock-info {
+    display: block;
+}
+.pickup-address-list .pickup_attention {
+    /*margin-top: -80px;*/
+    right: 20px;
+}
+.pickup-address-list .pickup_attention a {
+    color: #1abc9c;
+    display: inline-block;
+    margin-top: 5px;
+}
+#new_step2 .step2-item-delivery .new-address-form .gvn-add-region-address-extrawrapper .instructions {
+    float:right;
+    margin-left: 0;
+
+}
+
+#new_step2 .step2-item-delivery .new-address-form .gvn-add-region-address-form .extracontrol {
+    padding-top: 20px;
+    color: #555555;
+}
+
+
+
+#new_step2 .pickup-address-list .jq-radio {
+    float: left;
+}
+#new_step2 .pickup-address-list .terminal-address {
+    display: inline-block;
+    float: left;
+    max-width: 500px;
+    padding-left: 10px;
+}
+#new_step2 .pickup-address-list .terminal-address label {
+    padding-left: 0;
+}
+
+.date-and-price .date2 {
+    display: none;
+}
+
+.date-and-price .separator2 {
+    display: none;
+}
+
+#new_step2 .courier-delivery {
+    padding-top: 14px;
+}
+#new_step2 .jq-radio:hover {
+    border: 1px solid #19b294;
+}
+
+#new_step2 .infoboxaddr {
+    right: auto;
+    top: 53px;
+    margin-top: 0;
+    left: 500px;
+    padding-left: 25px;
+}
+#new_step2 .step2-item-delivery .new-address-form .gvn-add-region-address-form .extracontrol {
+    padding-top: 20px;
+}
+
+.different_days_attention {
+    right: 20px;
+    position: absolute;
+    width: 260px;
+    padding: 15px 25px 15px 45px;
+    line-height: 18px;
+    border-radius: 6px;
+    border: 1px solid #e1e0e0;
+    /*margin-top: 20px;*/
+    top: 20px;
+    font-size: 14px;
+    z-index: 100;
+
+    background: #ffffff url(/images/info.png) 20px 17px no-repeat;
+}
+#new_step2 .infobox-wrapper .infobox {
+    margin-bottom: 0;
+}
+
+
+.subcityaddupd{
+    clear: both;
+    margin: 0px 0 5px;
+    display: block;
+    width: 470px;
+}
+
+.subcityaddupd input{
+    width: 470px;
+    display: block;
+}
+
+.delivery-type-settings {
+    overflow:hidden;
+    margin-bottom:20px;
+}
+.delivery-type-settings a,
+.delivery-type-settings span {
+    display:block;
+    float:left;
+    padding:7px 15px;
+    font-weight:600;
+    font-size:14px;
+}
+.delivery-type-settings a {
+    text-decoration:none;
+    color:#1abc9c;
+}
+.delivery-type-settings a:hover {
+    background:#cafff5;
+    color:#1abc9c;
+}
+.delivery-type-settings li.transparent a:hover {
+    text-decoration:none;
+    background:#ffffff;
+    color:#1abc9c;
+    cursor: default;
+}
+.delivery-type-settings span {
+    background:#1abc9c;
+    color:#fff;
+}
+
+.delivery-type-settings li {
+    float: left;
+}
+
+.delivery-type-settings li a {
+    border:1px solid #20d4b0;
+}
+
+.delivery-type-settings li:first-child a {
+    border-left:1px solid #20d4b0;
+    border-bottom:1px solid #20d4b0;
+    border-top:1px solid #20d4b0;
+    border-top-left-radius:7px;
+    border-bottom-left-radius:7px;
+    border-right: 0;
+}
+
+.delivery-type-settings li:last-child a {
+    border-right:1px solid #20d4b0;
+    border-bottom:1px solid #20d4b0;
+    border-top:1px solid #20d4b0;
+    border-top-right-radius:7px;
+    border-bottom-right-radius:7px;
+    border-left: 0;
+}
+
+.delivery-type-settings li.active a,
+.delivery-type-settings li.active a:hover {
+    background-color: #1ABC9C;
+    color: #FFFFFF;
+}
+
+#charNum.green {
+    background: #ffffff url(/images/label_green.png) 0px 5px no-repeat;
+    height: 32px;
+    text-align: center;
+    padding-top: 6px;
+    width: 42px;
+    float: right;
+    margin-top: -13px;
+    margin-left: -29px;
+    color: #fff;
+}
+
+#charNum.red {
+    background: #ffffff url(/images/label_red.png) 0px 5px no-repeat;
+    height: 32px;
+    text-align: center;
+    padding-top: 6px;
+    width: 42px;
+    float: right;
+    margin-top: -13px;
+    margin-left: -29px;
+    color: #fff;
+}
+
+#new_step2 .calc_delivery_city_comment.red:focus {
+    border-color: #EA6060;
+}

@@ -1,0 +1,302 @@
+#choose-delivery-type {
+    width: 900px;
+}
+#choose-delivery-type .city-block {
+    /* margin-top: -89px; */
+    margin-left: 49px;
+    margin-top: 15px;
+    /* height: 49px; */
+    padding-bottom: 14px;
+    display: block;
+    position: relative;
+}
+#choose-delivery-type .city-block a {
+    /* background: url("../images/marker-small-white.png") 7px 6px no-repeat; */
+    left: 235px;
+    font-size: 22px;
+    top: -2px;
+    position: absolute;
+    /* color: #ffffff; */
+    /* line-height: 49px; */
+}
+#choose-delivery-type .city-block .search-city {
+    margin-top:3px;
+    display: none;
+}
+#choose-delivery-type .city-block .search-city input {
+    width: 240px;
+    width: 240px;
+    position: absolute;
+    margin-top: -13px;
+    margin-left: 8px;
+    padding: 0 10px;
+}
+.choose-border-city {
+    overflow: hidden;
+}
+
+.choose-border-city li {
+    /* border: 1px solid #a9a9a9; */
+    /* border-radius: 7px; */
+    /* width: 370px; */
+    height: 30px;
+    /* line-height: 37px; */
+    font-size: 14px;
+    padding-left: 18px;
+    /* float: right; */
+    margin: 2px;
+}
+.choose-border-city li:first-child {
+    /* float: left; */
+}
+.choose-border-city li span {
+    padding-left: 10px;
+}
+.delivery-type-block {
+    padding: 18px;
+    border: 1px solid #a9a9a9;
+    border-radius: 7px;
+    margin: 38px 2px 2px;
+    display: none;
+}
+.region-delivery .delivery-type-block {
+    display:block;
+}
+.delivery-type-block.active {
+    border: 3px solid #5aeace;
+    margin: 36px 0 0;
+}
+.delivery-type-block-title {
+    background: #ffffff url("../images/equipment/arrow-right.png") 0 4px no-repeat;
+    padding-left: 35px;
+    color: #1abc9c;
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 18px;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.delivery-type-block.active .delivery-type-block-title {
+    background: #ffffff url("../images/equipment/arrow-bottom.png") 0 8px no-repeat;
+}
+.delivery-type-block-preview {
+    padding-left: 35px;
+    font-size: 22px;
+    line-height: 40px;
+    /* height: 80px;*/
+}
+.delivery-type-block-preview a {
+    color: #1abc9c;
+}
+.delivery-type-block.active .delivery-type-block-preview {
+    display: none;
+}
+.delivery-type-block-content {
+    margin-top:9px;
+    padding-left: 35px;
+    font-size: 22px;
+    display: none;
+}
+.delivery-type-block.active .delivery-type-block-content {
+    display: block;
+}
+.warehouse-block {
+    margin-bottom: 18px;
+}
+.warehouse-block-text {
+    font-size: 14px;
+}
+.warehouse-block-text p {
+    margin-bottom: 18px;
+
+}
+.warehouse-block-text .separator {
+    color: #d7d7d7;
+    padding: 0 5px;
+}
+.warehouse-block-map {
+    margin: 36px 0 36px;
+    width: 730px;
+    height: 290px;
+    border-radius: 7px;
+}
+.warehouse-block-controls {
+    overflow: hidden;
+    width: 730px;
+}
+.warehouse-block-controls a {
+    float: right;
+    padding: 0 20px;
+}
+
+.user-addresses-list {
+    font-size: 14px;
+    clear: both;
+    padding-top: 36px;
+    margin-left: -36px;
+}
+.user-addresses-list .account-details-delivery-controls {
+    margin-left: 0;
+}
+.user-addresses-list .order-delivery-row-num {
+    width: 36px;
+}
+.user-addresses-list .order-delivery-row-address {
+    width: 330px;
+    white-space: nowrap;
+}
+
+.user-choose-date {
+    padding-top: 18px;
+}
+.user-choose-date-title {
+    font-size: 22px;
+    line-height: 36px;
+    float: left;
+    /* width: 125px;*/
+}
+.user-choose-date-price {
+    font-weight: 700;
+    float: left;
+    width: 125px;
+    font-size: 22px;
+    line-height: 36px;
+    margin-left: 25px;
+}
+.user-choose-date-datepicker {
+    float: left;
+}
+.user-choose-address-block-controls {
+    overflow: hidden;
+    width: 730px;
+    margin-bottom: 18px;
+}
+.user-choose-address-block-controls a {
+    float: right;
+    padding: 0 20px;
+}
+.message-out-of-city {
+    position: absolute;
+    z-index: 10;
+    margin-top: -35px;
+    margin-left: -10px;
+    font-size: 14px;
+}
+.message-out-of-city .arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid rgba(85,85,85,0.80);
+    margin-left: 40px;
+}
+.message-out-of-city-content {
+    width: 385px;
+    padding: 20px;
+    color: #ffffff;
+    border-radius: 7px;
+    background: rgb(85, 85, 85);
+    background: rgba(85, 85, 85, 0.80);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000); /* For IE 5.5 - 7*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)"; /* For IE 8*/
+}
+.message-out-of-city-content .choose-current-city {
+    margin-bottom: 30px;
+    line-height: 19px;
+    height: 19px;
+    overflow: hidden;
+}
+.message-out-of-city-content .choose-current-city .jq-checkbox {
+    float:left;
+}
+
+.message-out-of-city-content .choose-current-city span {
+    padding-left: 12px;
+    line-height: 19px;
+    height: 19px;
+    float: left;
+}
+.message-out-of-city-content .choose-another-city {
+    overflow: hidden;
+}
+.message-out-of-city-content .choose-another-city span {
+    display: block;
+    margin-bottom: 20px;
+}
+.message-out-of-city-content .choose-another-city input {
+    width: 270px;
+}
+.message-out-of-city-content a.wwhite-btn {
+    width: 22px;
+    float: right;
+    margin-top: 2px;
+}
+#terminals_map {
+    border-radius: 7px;
+    background: #cccccc;
+    width: 730px;
+    height: 290px;
+    margin-top: 18px;
+}
+.terminals-list {
+    font-size: 14px;
+    margin-top: 18px;
+}
+.terminals-list li {
+    overflow: hidden;
+    margin: 36px 0 0 -36px;
+}
+.terminals-list li .input {
+    display: block;
+    width: 36px;
+    float: left;
+}
+.terminals-list li .terminal-address {
+    display: block;
+    width: 730px;
+    float: left;
+    line-height: 18px;
+}
+.terminals-list .infobox {
+    margin-top: 36px;
+}
+.delivery-type-block-terminals-list-controls {
+    overflow: hidden;
+    width: 730px;
+    margin-bottom: 18px;
+}
+.delivery-type-block-terminals-list-controls a {
+    float: right;
+    padding: 0 20px;
+}
+.person-info {
+    overflow: hidden;
+    margin-top: 36px;
+}
+.person-info-name {
+    float: left;
+    width: 230px;
+    padding-right: 65px;
+}
+.person-info-name input {
+    width: 190px;
+}
+.person-info-phone {
+    float: left;
+    width: 190px;
+}
+.person-info-phone input {
+    width: 150px;
+}
+.person-info-email {
+    float: right;
+    width: 190px;
+}
+.person-info-email input {
+    width: 150px;
+}

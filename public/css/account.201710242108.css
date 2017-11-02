@@ -1,0 +1,809 @@
+.vertical-middle {
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+}
+
+.account-wrapper {
+    border:1px solid #9c9c9c;
+    border-radius:7px;
+    overflow:hidden;
+}
+.account-details {}
+
+.account-details input {
+    background:#ffffff;
+    border-radius:7px;
+    padding:0 10px;
+    font-size:14px;
+    line-height:34px;
+    height:34px;
+    color:#555555;
+    border:1px solid #a9a9a9;
+    margin:2px;
+}
+.account-details input:focus {
+    border:3px solid #77fce2;
+    margin:0;
+    outline: none;
+}
+.account-details input:disabled {
+    border: 1px solid #ffffff;
+    width: 100%;
+}
+
+
+#requisites_edit_inn {
+    border:1px solid #a9a9a9;
+}
+
+.account-details-wrapper {
+    /*margin:17px 17px 15px 15px;*/
+    margin-bottom: 15px;
+    width:1006px;
+    border:1px solid #9c9c9c;
+    border-radius:7px;
+}
+.account-details-profile-row-password,
+.account-details-profile-row {
+    overflow:hidden;
+    border-top:1px solid #e1e0e0;
+}
+.account-details-profile-row:first-child {
+    border-top:0;
+}
+
+.account-details-profile-row-label {
+    line-height:54px;
+    height:54px;
+    width:270px;
+    padding-left:24px;
+    float:left;
+    font-size:14px;
+    font-weight:600;
+}
+.account-details-profile-row-input {
+    margin-top:3px;
+    width:580px;
+    float:left;
+    font-size:14px;
+    line-height:47px;
+    height:47px;
+}
+.account-details-profile-row-input span {
+    padding-left:13px;
+}
+.account-details-profile-row-save {
+    display:none;
+    width:110px;
+    float:left;
+    margin-top:7px;
+}
+.account-details-profile-row-password-edit,
+.account-details-profile-row-edit {
+    float:right;
+    width:34px;
+    margin-right:12px;
+}
+.account-details-profile-row-password-edit a,
+.account-details-profile-row-edit a {
+    width:34px;
+    line-height:54px;
+    height:54px;
+    background:url("../images/account/edit.png") center center no-repeat;
+    display:block;
+}
+.account-details-profile-row-input input {
+    width:213px;
+}
+.account-details-profile-row.active {
+
+}
+.account-details-profile-row.active .account-details-profile-row-save {
+    display:block;
+}
+.account-details-profile-row.active .account-details-profile-row-edit {
+    display:none;
+}
+
+
+
+
+.account-details-profile-row-password-fake {
+    overflow:hidden;
+}
+.account-details-profile-row-password-change {
+    clear:both;
+    overflow:hidden;
+    margin-bottom:18px;
+    display:none;
+}
+.account-details-profile-row-password-change .account-details-profile-row-label {
+    clear:both;
+}
+.account-details-profile-row-oldpassword {
+    overflow:hidden;
+    border-bottom: 1px solid #e1e0e0;
+
+}
+.account-details-profile-row-password-controls {
+    overflow:hidden;
+    clear:both;
+    padding-left:294px;
+    padding-top:18px;
+}
+.account-details-profile-row-password-controls a {
+    float:left;
+    margin-right:27px;
+    font-size:14px;
+}
+.account-details-profile-attention {
+    font-size:12px;
+    background: url("../images/info.png") no-repeat;
+    clear: both;
+    /*margin-bottom: 25px;*/
+    margin-top: 0;
+    margin-left:18px;
+    padding-left: 35px;
+}
+.account-details-profile-row-password.active {
+
+}
+.account-details-profile-row-password.active .account-details-profile-row-password-fake {
+    display:none;
+}
+.account-details-profile-row-password.active .account-details-profile-row-password-change {
+    display:block;
+}
+
+/**
+*** Р›РёС‡РЅС‹Р№ РєР°Р±РёРЅРµС‚ / Р РµРєРІРёР·РёС‚С‹
+**/
+
+.account-details-requisites {
+
+}
+.account-details-requisites-row {
+    overflow:hidden;
+    border-top:1px solid #e1e0e0;
+}
+.account-details-requisites-row:first-child {
+    border:0;
+}
+.account-details-requisites-row-name {
+    overflow:hidden;
+    line-height:53px;
+    height:53px;
+    margin-left:18px;
+    width:670px;
+    float:left;
+    font-size:14px;
+    text-transform:uppercase;
+}
+.account-details-requisites-row-controls {
+
+}
+.account-details-requisites-row-controls {
+    float:right;
+    width:55px;
+    padding-right:20px;
+}
+
+.account-details-requisites-row-controls a {
+    float:right;
+    display:block;
+    width:15px;
+    height:15px;
+    margin-left:10px;
+    margin-top:19px;
+}
+.account-details-requisites-row-controls a.edit-ico {
+    background:url("../images/account/view.png") no-repeat;
+}
+.account-details-requisites-row-controls a.edit-ico:hover,
+.active .account-details-requisites-row-controls a.edit-ico {
+    background-position:bottom left;
+}
+
+.account-details-requisites-row-collapse {
+    display:none;
+}
+.account-details-requisites-row.active .account-details-requisites-row-collapse {
+    display:block;
+}
+/*
+.account-details-requisites-row-left {
+	float:left;
+	width:420px;
+	margin:0 35px 0 15px;
+}
+.account-details-requisites-row-right {
+	float:right;
+	width:275px;
+	margin-right:15px;
+}
+*/
+.account-details-requisites-row-field {
+    margin-bottom:10px;
+    width:450px;
+    float:left;
+    height:80px;
+}
+.account-details-requisites-row .account-details-requisites-row-field {
+    margin-left: 18px;
+}
+.account-details-requisites-row .account-details-requisites-row-field:nth-child(2n) {
+    margin-left: 50px;
+}
+.account-details-requisites-row-field-label {
+    font-size:14px;
+    padding-left:5px;
+    height:40px;
+    line-height:40px;
+    font-weight:600;
+}
+.account-details-requisites-row-field-input input {
+    width:440px;
+}
+
+.account-details-requisites-row-collapse-controls {
+    clear:both;
+    overflow:hidden;
+    padding-top:25px;
+    margin:0 15px 15px 20px;
+}
+.account-details-requisites-row-collapse-controls a {
+    float:left;
+    margin-right:20px;
+    font-size:14px;
+}
+
+.account-details-requisites-controls {
+    width:240px;
+    margin:18px 0 20px 18px;
+    color:#1abc9c;
+    font-size:14px;
+}
+.account-details-requisites-controls.not-active {
+    display:none;
+}
+.account-details-requisites-controls.not-active-btn a {
+    opacity:0.3;
+}
+.account-details-requisites-controls.not-active-btn a.wgreen-btn:hover {
+    border: 2px solid #1abc9c;
+    color: #1abc9c;
+    background:#ffffff;
+}
+.account-details-requisites-controls a {
+    color:#1abc9c;
+    font-size:14px;
+}
+/**
+*** Р›РёС‡РЅС‹Р№ РєР°Р±РёРЅРµС‚ / Р РµРєРІРёР·РёС‚С‹ / РќРѕРІС‹Рµ СЂРµРєРІРёР·РёС‚С‹
+**/
+.account-details-requisites-new {
+    overflow: hidden;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    display: none;
+}
+
+.account-details-requisites-new .infobox {
+    margin-top: 66px;
+}
+
+.account-details-requisites-new.active {
+    display:block;
+}
+
+.account-details-requisites-new-title {
+    font-size:14px;
+    font-weight:600;
+    padding-left:21px;
+}
+.account-details-requisites-new-add {
+    display:none;
+    overflow:hidden;
+    margin:10px 0 20px 21px;
+}
+/*
+.account-details-requisites-new-add input {
+	width: 200px;
+}
+*/
+.account-details-requisites-new-add-inn,
+.account-details-requisites-new-add-kpp {
+    float:left;
+    width:216px;
+    margin-right: 15px;
+}
+.account-details-requisites-new-add-controls {
+    float: left;
+    width:275px;
+    margin-right:15px;
+    margin-top: 2px;
+}
+.account-details-requisites-new-add-controls a {
+    float:right;
+    margin-left:25px;
+    font-size:14px;
+}
+
+.account-details-requisites-new-wrapper {
+    margin: 0 0 15px 0;
+    padding-top:0;
+    display:none;
+}/*
+.account-details-requisites-new-left {
+	padding-left: 6px;
+	width: 445px;
+	float:left;
+}
+.account-details-requisites-new-right {
+	float:left;
+	width: 308px;
+}*/
+.account-details-requisites-new-wrapper .infobox {
+    margin:18px 0 0 18px;
+}
+.account-details-requisites-new-wrapper .account-details-requisites-new-field {
+    margin-left: 18px;
+}
+#popup-order_payment-window .account-details-requisites-new-wrapper .account-details-requisites-new-field {
+    margin-left: 0px;
+}
+.account-details-requisites-new-wrapper .account-details-requisites-new-field:nth-child(2n) {
+    margin-left: 50px;
+}
+
+#popup-new_company-window .account-details-requisites-new-wrapper .account-details-requisites-new-field {
+    margin-left: 0px;
+}
+#popup-new_company-window .account-details-requisites-new-wrapper .account-details-requisites-new-field.right {
+    margin-left: 36px;
+    float: right;
+}
+#popup-new_company-window .account-details-requisites-new-field input {
+    width: 415px;
+}
+
+
+.account-details-requisites-new-field {
+    margin-bottom:10px;
+    width:450px;
+    float:left;
+    height:80px;
+}
+.account-details-requisites-new-field-label {
+    font-size:14px;
+    height:40px;
+    line-height:40px;
+    font-weight:600;
+}
+.account-details-requisites-new-field-data {
+    font-size:14px;
+}
+
+.account-details-requisites-new-field input {
+    width: 440px;
+}
+
+.account-details-requisites-new-controls {
+    clear:both;
+    padding-top:30px;
+    overflow:hidden;
+    margin-right:25px;
+    margin-bottom:15px;
+    margin-left: 20px;
+}
+#payment-form .account-details-requisites-new-controls {
+    margin-left: 0;
+}
+.account-details-requisites-new-controls a {
+    float:left;
+    margin-right:20px;
+    font-size:14px;
+}
+
+
+#popup-order_payment-window .account-details-requisites-new-wrapper .account-details-requisites-new-field.right {
+    float: right;
+    margin-right: 6px;
+}
+
+
+/**
+*** Р›РёС‡РЅС‹Р№ РєР°Р±РёРЅРµС‚ / Р—Р°РєР°Р·С‹ РІ СЂР°Р±РѕС‚Рµ
+**/
+
+.account-details-neworders-table-row-payment.with-account-number {
+    height:45px;
+    padding-top:7px;
+    line-height:16px;
+
+}
+
+.order-icon {
+    width:25px;
+    height:25px;
+    margin:13px auto 0;
+    background:url("../images/account/status-list.png") no-repeat;
+
+    display:block;
+}
+/* РёРєРѕРЅРєРё СЃС‚Р°С‚СѓСЃРѕРІ Р·Р°РєР°Р·Р° */
+.order-icon-status-attach {background-position:0 0;} /*СЃС‚Р°С‚СѓСЃ РїСЂРёРєСЂРµРїРёС‚Рµ РјР°РєРµС‚ */
+.order-icon-status-inwork {background-position:0 -26px;} /* СЃС‚Р°С‚СѓСЃ РІ СЂР°Р±РѕС‚Рµ */
+.order-icon-status-ready {background-position:0 -51px;} /* СЃС‚Р°С‚СѓСЃ РіРѕС‚РѕРІ */
+.order-icon-status-wait {background-position:0 -76px;} /* СЃС‚Р°С‚СѓСЃ РІ РѕР¶РёРґР°РЅРёРё */
+
+.order-icon-layout-no {background-position:-26px 0;} /* РјР°РєРµС‚С‹ РЅРµ Р·Р°РіСЂСѓР¶РµРЅС‹ Р»РёР±Рѕ РІ РЅРёС… РѕС€РёР±РєР° */
+.order-icon-layout-yes {background-position:-26px -26px;} /* СЃ РјР°РєРµС‚Р°РјРё РІСЃРµ РІ РїРѕСЂСЏРґРєРµ */
+
+.order-icon-delivery-no {background-position:-51px 0;} /* РґРѕСЃС‚Р°РІРєРё РЅРµС‚, СЃР°РјРѕРІС‹РІРѕР· */
+.order-icon-delivery-yes {background-position:-51px -26px;} /* РґРѕСЃС‚Р°РІРєР° РµСЃС‚СЊ */
+
+.account-details-neworders-table {
+
+}
+
+.account-details-neworders-table-top {
+    overflow:hidden;
+}
+
+.account-details-neworders-table-top div {
+    float:left;
+    font-size:14px;
+    height:36px;
+    line-height:36px;
+    border-right:1px solid #eceaea;
+    text-align:center;
+}
+.account-details-neworders-table-top-num {
+    width:84px;
+}
+.account-details-neworders-table-top .account-details-neworders-table-top-order {
+    width:129px;
+    padding-left:10px;
+    text-align:left;
+}
+.account-details-neworders-table-top-readiness {
+    width:107px;
+}
+.account-details-neworders-table-top-status {
+    width:60px;
+}
+.account-details-neworders-table-top-layout {
+    width:60px;
+}
+.account-details-neworders-table-top-delivery {
+    width:75px;
+}
+.account-details-neworders-table-top-payment {
+    width:70px;
+}
+.account-details-neworders-table-top .account-details-neworders-table-top-cost {
+    width:90px;
+    border-right:0;
+}
+
+.account-details-neworders-table-row {
+    border-top:1px solid #e1e0e0;
+    overflow:hidden;
+    height:52px;
+    font-size:14px;
+}
+.account-details-neworders-table-row:first-child {
+    border-top:1px solid #9c9c9c;
+}
+
+.account-details-neworders-table-row div {
+    float:left;
+    border-right:1px solid #eceaea;
+}
+.account-details-neworders-table-row-num {
+    float:left;
+    height:45px;
+    padding-top:8px;
+    width:69px;
+    padding-left:15px;
+}
+.account-details-neworders-table-row-num span {
+    font-size:12px;
+    display:block;
+    line-height:12px;
+    margin:5px 0 0 0;
+    height:14px;
+}
+.account-details-neworders-table-row-order {
+    height:52px;
+    width:129px;
+    padding-top:0;
+    padding-left:10px;
+    border-right:1px solid #e1e0e0;
+}
+
+.account-details-neworders-table-row-order span {
+    line-height:52px;
+    display:block;
+}
+.account-details-neworders-table-row-order span.two-strings {
+    line-height:16px;
+    padding-top:10px;
+}
+.account-details-neworders-table-row-readiness {
+    line-height:52px;
+    text-align:center;
+    width:107px;
+}
+.account-details-neworders-table-row-readiness-delayed {
+    background:url("../images/account/attention.png") 85px 19px no-repeat;
+}
+.account-details-neworders-table-row-readiness-delayed span {
+    color:#ff0000;
+    border-bottom:1px dashed #ff0000;
+}
+.account-details-neworders-table-row-status {
+    width:60px;
+    height:52px;
+}
+.account-details-neworders-table-row-layout {
+    width:60px;
+    height:52px;
+}
+.account-details-neworders-table-row-delivery {
+    width:75px;
+    height:52px;
+}
+.account-details-neworders-table-row-payment {
+    width:70px;
+    height:52px;
+    line-height:52px;
+    font-size:12px;
+    text-align:center;
+}
+.account-details-neworders-table-row .account-details-neworders-table-row-cost {
+    width:80px;
+    height:52px;
+    line-height:52px;
+    font-size:14px;
+    text-align:right;
+    border-right:0;
+    padding-right:10px;
+}
+
+
+
+.account-details-neworders-table-row .account-details-neworders-table-row-controls {
+    float:left;
+    height:53px;
+    width:40px;
+    margin-top:19px;
+    border-right:0;
+    padding-left:15px;
+}
+.account-details-neworders-table-row-controls a {
+    display:block;
+    width:15px;
+    height:15px;
+    float:left;
+}
+.account-details-neworders-table-row-controls a.edit-ico {
+    background: url("../images/account/ico_edit.png") left top no-repeat;
+    margin-right:10px;
+}
+.account-details-neworders-table-row-controls a.edit-ico:hover {
+    background-position:left bottom;
+
+}
+.account-details-neworders-attention {
+    font-size:12px;
+    background: url("../images/info.png") no-repeat;
+    clear: both;
+    margin-bottom: 25px;
+    margin-top: 0;
+    margin-left:18px;
+    padding-left: 35px;
+}
+
+.tooltipster-content b {font-weight:600;}
+
+
+
+/**
+*** Р›РёС‡РЅС‹Р№ РєР°Р±РёРЅРµС‚ / РђСЂС…РёРІРЅС‹Рµ Р·Р°РєР°Р·С‹
+**/
+
+
+.account-details-oldorders-table {
+
+}
+
+.account-details-oldorders-table-top {
+    overflow:hidden;
+}
+
+.account-details-oldorders-table-top div {
+    float:left;
+    font-size:14px;
+    height:36px;
+    line-height:36px;
+}
+.account-details-oldorders-table-top-order {
+    width:296px;
+    padding-left:20px;
+}
+.account-details-oldorders-table-top-delivery {
+    width:283px;
+    padding-left:25px;
+}
+.account-details-oldorders-table-top-payment {
+    width:75px;
+    text-align:center;
+    padding-left:20px;
+}
+
+
+.account-details-oldorders-table-row {
+    border-top:1px solid #e1e0e0;
+    overflow:hidden;
+    height:53px;
+    font-size:14px;
+}
+.account-details-oldorders-table-row .vertical-middle {
+    text-align:left;
+}
+.account-details-oldorders-table-row:first-child {
+    border-top:1px solid #9c9c9c;
+}
+.account-details-oldorders-table-row-num {
+    float:left;
+    height:45px;
+    padding-top:8px;
+    width:75px;
+    padding-left:20px;
+    padding-right:15px;
+}
+.account-details-oldorders-table-row-num span {
+    font-size:12px;
+    display:block;
+    color:#9d9d9d;
+    line-height:12px;
+    margin:5px 0 0 0;
+    height:14px;
+}
+.account-details-oldorders-table-row-info {
+    float:left;
+    height:45px;
+    width:192px;
+    padding-top:8px;
+    padding-right:14px;
+}
+.account-details-oldorders-table-row-info a {
+    text-decoration:none;
+    background:url("../images/order/delivery/order-info.png") right 3px no-repeat;
+    padding-right:20px;
+}
+.account-details-oldorders-table-row-info a span {
+    border-bottom:1px dashed #a2a2a2;
+}
+.account-details-oldorders-table-row-info p {
+    margin:5px 0 0 0;
+    display:block;
+    font-size:12px;
+    color:#9d9d9d;
+    height:12px;
+    line-height:12px;
+    overflow:hidden;
+}
+.account-details-oldorders-table-row-delivery {
+    float:left;
+    height:53px;
+    width:306px;
+    padding-right:0;
+    border-left:1px solid #e1e0e0;
+    border-right:1px solid #e1e0e0;
+    overflow:hidden;
+}
+.account-details-oldorders-table-row-delivery-address {
+    padding-left:25px;
+    width:150px;
+    font-size:12px;
+    float:left;
+}
+.account-details-oldorders-table-row-delivery-address .vertical-middle {
+    height:53px;
+}
+.account-details-oldorders-table-row-delivery-address .vertical-middle span {
+    color:#9d9d9d;
+
+}
+.account-details-oldorders-table-row-delivery-dash {
+    float:left;
+    width:21px;
+    margin-top:26px;
+    margin-left:10px;
+    margin-right:10px;
+    border-top:1px solid #d8d8d8;
+}
+.account-details-oldorders-table-row-delivery-date {
+    float:left;
+    width:70px;
+    font-size:14px;
+    height:53px;
+}
+.account-details-oldorders-table-row-delivery-date span {
+    width:70px;
+    height:53px;
+    text-align:left;
+}
+.account-details-oldorders-table-row-cost {
+    float:left;
+    height:53px;
+    line-height:53px;
+    font-size:14px;
+    width:70px;
+    padding-left:20px;
+    text-align:right;
+}
+.account-details-oldorders-table-row-controls {
+    float:right;
+    height:53px;
+    width:20px;
+    margin-top:19px;
+    margin-right:14px;
+}
+.account-details-oldorders-table-row-controls a {
+    display:block;
+    width:15px;
+    height:15px;
+
+}
+.account-details-oldorders-table-total {
+    overflow:hidden;
+    border-top:1px solid #9c9c9c;
+}
+.account-details-oldorders-table-total-title {
+    float:left;
+    width:200px;
+    padding-left:20px;
+    height:33px;
+    line-height:33px;
+    font-size:14px;
+    font-weight:600;
+}
+.account-details-oldorders-table-total-sum {
+    float:right;
+    width:200px;
+    padding-right:47px;
+    height:33px;
+    line-height:33px;
+    font-size:14px;
+    font-weight:600;
+    text-align:right;
+
+}
+
+/* POPUP ACCOUNT */
+
+#popup-order_account-window {
+    width:465px;
+}
+.popup-order_account-content a {
+    margin:0 auto 35px;
+    width:255px;
+}
+.popup-order_account-content a:last-child {
+    margin-bottom:10px;
+}
+.popup-order_account-error {
+    color:#ff0000;
+    text-align:center;
+    line-height:18px;
+    font-size:12px;
+    width:380px;
+    display:block;
+    margin:0 auto 10px;
+
+}

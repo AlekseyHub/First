@@ -1,0 +1,186 @@
+/*
+	РњРµРЅСЋ СЂР°Р·РґРµР»Р° РЁРµР»РєРѕРіСЂР°С„РёСЏ
+*/
+/*
+.silk-menu-wrapper {
+	overflow:hidden;
+	margin-bottom:-50px;
+}
+.silk-menu-wrapper li {
+	font-size:14px;
+	width:180px;
+	padding-right:95px;
+	float:left;
+	margin-bottom:50px;
+	height:75px;
+	display:block;
+}
+.silk-menu-wrapper li:nth-child(4n){
+	padding-right: 0;
+}
+.silk-menu-wrapper li a {
+	width:75px;
+	height:75px;
+	display:block;
+	float:left;
+}
+.silk-menu-wrapper li p {
+	width:95px;
+	height:75px;
+	display:block;
+	margin:0;
+	padding-left:10px;
+	float:left;
+}
+.silk-menu-wrapper li span {
+	width:95px;
+	height:75px;
+	display:table-cell;
+	vertical-align:middle;
+}
+
+.silk-menu-wrapper li a:hover {
+	background-position:left bottom;
+}
+
+.silk-menu-wrapper .cards {background-image:url("../images/product_images/silk/menu/cards.png");}
+.silk-menu-wrapper .plastic-bags {background-image:url("../images/product_images/silk/menu/plastic-bags.png");}
+.silk-menu-wrapper .paper-bags {background-image:url("../images/product_images/silk/menu/paper-bags.png");}
+.silk-menu-wrapper .plastic-folders {background-image:url("../images/product_images/silk/menu/plastic-folders.png");}
+.silk-menu-wrapper .cartoon-folders {background-image:url("../images/product_images/silk/menu/cartoon-folders.png");}
+.silk-menu-wrapper .envelopes {background-image:url("../images/product_images/silk/menu/envelopes.png");}
+.silk-menu-wrapper .travel-envelopes {background-image:url("../images/product_images/silk/menu/travel-envelopes.png");}
+.silk-menu-wrapper .stickers {background-image:url("../images/product_images/silk/menu/stickers.png");}
+.silk-menu-wrapper .postcards {background-image:url("../images/product_images/silk/menu/postcards.png");}
+.silk-menu-wrapper .labels {background-image:url("../images/product_images/silk/menu/labels.png");}
+*/
+/*
+.silk-menu-wrapper {
+	overflow:hidden;
+	margin-bottom:-50px;
+}
+.silk-menu-wrapper li {
+	font-size:14px;
+	width:225px;
+	padding-right:166px;
+	float:left;
+	margin-bottom:50px;
+	height:260px;
+	display:block;
+}
+.silk-menu-wrapper li:nth-child(3n){
+	padding-right: 0;
+}
+*/
+/*
+.silk-menu-wrapper li:nth-child(10n){
+	padding-left: 365px;
+}*/
+
+/*
+.silk-menu-wrapper li a {
+	width:224px;
+	height:224px;
+	display:block;
+	text-decoration:underline;
+}
+.silk-menu-wrapper li p {
+	width:224px;
+	display:block;
+	margin:10px 0 0;
+	text-align:center;
+}
+.silk-menu-wrapper li span {
+	width:220px;
+	height:220px;
+	display:table-cell;
+	vertical-align:middle;
+	border:2px solid #e1e0e0;
+	border-radius:111px;
+	background: 50% 50% no-repeat;
+}
+
+.silk-menu-wrapper li a:hover span {
+	border:2px solid #00e5b8;
+}
+.silk-menu-wrapper li a:hover {
+	color:#1abc9c;
+}
+.silk-menu-wrapper .cards span {background-image:url("../images/other_products_menu/cards.png");}
+.silk-menu-wrapper .plastic-bags span {background-image:url("../images/other_products_menu/plastic_bags.png");}
+.silk-menu-wrapper .paper-bags span {background-image:url("../images/other_products_menu/paper_bags.png");}
+.silk-menu-wrapper .plastic-folders span {background-image:url("../images/other_products_menu/plastic_folders.png");}
+.silk-menu-wrapper .cartoon-folders span {background-image:url("../images/other_products_menu/cartoon_folders.png");}
+.silk-menu-wrapper .envelopes span {background-image:url("../images/other_products_menu/envelopes.png");}
+.silk-menu-wrapper .stickers span {background-image:url("../images/other_products_menu/stickers.png");}
+.silk-menu-wrapper .postcards span {background-image:url("../images/other_products_menu/postcards.png");}
+.silk-menu-wrapper .labels span {background-image:url("../images/other_products_menu/labels.png");}
+.silk-menu-wrapper .calendars span {background-image:url("../images/other_products_menu/calendars.png");}
+.silk-menu-wrapper .prezent span {background-image:url("../images/other_products_menu/prezent.png");}
+*/
+
+.new-silk-menu-wrapper {
+    overflow:hidden;
+}
+.new-silk-menu-wrapper li {
+    font-size:14px;
+    width: 269px;
+    height: 300px;
+    float: left;
+    border-bottom: 1px solid #e5e7e8;
+    border-right: 1px solid #e5e7e8;
+    text-align: center;
+}
+.new-silk-menu-wrapper li:nth-child(4n) {
+    width: 270px;
+    border-right: 0px solid #e5e7e8;
+}
+/*
+.new-silk-menu-wrapper li:nth-child(10n){
+    padding-left: 365px;
+}*/
+.new-silk-menu-wrapper li a {
+    width:269px;
+    height:300px;
+    display:block;
+    text-decoration:none;
+}
+.new-silk-menu-wrapper li p {
+    width:269px;
+    display:block;
+    margin:40px 0 0;
+    text-align:center;
+    font-size:16px;
+}
+.new-silk-menu-wrapper li span {
+    width:269px;
+    height:220px;
+    display:table-cell;
+    vertical-align:middle;
+    background: 50% 50% no-repeat;
+}
+
+.new-silk-menu-wrapper li a:hover span {
+
+}
+.new-silk-menu-wrapper li a:hover {
+    color:#1abc9c;
+}
+.new-silk-menu-wrapper .cards span {background-image:url("../images/other_products_menu/cards.png");}
+.new-silk-menu-wrapper .plastic-bags span {background-image:url("../images/other_products_menu/plastic_bags.png");}
+.new-silk-menu-wrapper .paper-bags span {background-image:url("../images/other_products_menu/paper_bags.png");}
+.new-silk-menu-wrapper .plastic-folders span {background-image:url("../images/other_products_menu/plastic_folders.png");}
+.new-silk-menu-wrapper .cartoon-folders span {background-image:url("../images/other_products_menu/cartoon_folders.png");}
+.new-silk-menu-wrapper .envelopes span {background-image:url("../images/other_products_menu/envelopes.png");}
+.new-silk-menu-wrapper .stickers span {background-image:url("../images/other_products_menu/stickers.png");}
+.new-silk-menu-wrapper .postcards span {background-image:url("../images/other_products_menu/postcards.png");}
+.new-silk-menu-wrapper .labels span {background-image:url("../images/other_products_menu/labels.png");}
+.new-silk-menu-wrapper .calendars span {background-image:url("../images/other_products_menu/calendars.png");}
+.new-silk-menu-wrapper .prezent span {background-image:url("../images/other_products_menu/prezent.png");}
+
+.new-silk-menu-wrapper li a:hover {
+    background: #ffffff;
+    z-index:10;
+    position: absolute;
+    box-shadow: 0px 12px 55px 0px rgba(0,0,0,.2);
+}
